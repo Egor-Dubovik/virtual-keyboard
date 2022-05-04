@@ -1,0 +1,784 @@
+{
+	"en": {
+		"row0": "row",
+		"Backquote": {
+			"lowerCase": "`",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": false
+		},
+		"Digit1": {
+			"lowerCase": "1",
+			"upperCase": "",
+			"shift": "!",
+			"isFn": false
+		},
+		"Digit2": {
+			"lowerCase": "2",
+			"upperCase": "",
+			"shift": "@",
+			"isFn": false
+		},
+		"Digit3": {
+			"lowerCase": "3",
+			"upperCase": "",
+			"shift": "#",
+			"isFn": false
+		},
+		"Digit4": {
+			"lowerCase": "4",
+			"upperCase": "",
+			"shift": "$",
+			"isFn": false
+		},
+		"Digit5": {
+			"lowerCase": "5",
+			"upperCase": "",
+			"shift": "%",
+			"isFn": false
+		},
+		"Digit6": {
+			"lowerCase": "6",
+			"upperCase": "",
+			"shift": "^",
+			"isFn": false
+		},
+		"Digit7": {
+			"lowerCase": "7",
+			"upperCase": "",
+			"shift": "&",
+			"isFn": false
+		},
+		"Digit8": {
+			"lowerCase": "8",
+			"upperCase": "",
+			"shift": "*",
+			"isFn": false
+		},
+		"Digit9": {
+			"lowerCase": "9",
+			"upperCase": "",
+			"shift": "(",
+			"isFn": false
+		},
+		"Digit0": {
+			"lowerCase": "0",
+			"upperCase": "",
+			"shift": ")",
+			"isFn": false
+		},
+		"Minus": {
+			"lowerCase": "-",
+			"upperCase": "",
+			"shift": "_",
+			"isFn": false
+		},
+		"Equal": {
+			"lowerCase": "=",
+			"upperCase": "",
+			"shift": "+",
+			"isFn": false
+		},
+		"Backspace": {
+			"lowerCase": "Backspace",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"row1": "row",
+		"Tab": {
+			"lowerCase": "Tab",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"KeyQ": {
+			"lowerCase": "q",
+			"upperCase": "Q",
+			"shift": "Q",
+			"isFn": false
+		},
+		"KeyW": {
+			"lowerCase": "w",
+			"upperCase": "W",
+			"shift": "W",
+			"isFn": false
+		},
+		"KeyE": {
+			"lowerCase": "e",
+			"upperCase": "E",
+			"shift": "E",
+			"isFn": false
+		},
+		"KeyR": {
+			"lowerCase": "r",
+			"upperCase": "R",
+			"shift": "R",
+			"isFn": false
+		},
+		"KeyT": {
+			"lowerCase": "t",
+			"upperCase": "T",
+			"shift": "T",
+			"isFn": false
+		},
+		"KeyY": {
+			"lowerCase": "y",
+			"upperCase": "Y",
+			"shift": "Y",
+			"isFn": false
+		},
+		"KeyU": {
+			"lowerCase": "u",
+			"upperCase": "U",
+			"shift": "U",
+			"isFn": false
+		},
+		"KeyI": {
+			"lowerCase": "i",
+			"upperCase": "I",
+			"shift": "I",
+			"isFn": false
+		},
+		"KeyO": {
+			"lowerCase": "o",
+			"upperCase": "O",
+			"shift": "O",
+			"isFn": false
+		},
+		"KeyP": {
+			"lowerCase": "p",
+			"upperCase": "P",
+			"shift": "P",
+			"isFn": false
+		},
+		"BracketLeft": {
+			"lowerCase": "[",
+			"upperCase": "",
+			"shift": "{",
+			"isFn": false
+		},
+		"BracketRight": {
+			"lowerCase": "]",
+			"upperCase": "",
+			"shift": "}",
+			"isFn": false
+		},
+		"Backslash": {
+			"lowerCase": "\\",
+			"upperCase": "",
+			"shift": "|",
+			"isFn": false
+		},
+		"Delete": {
+			"lowerCase": "Del",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"row2": "row",
+		"CapsLock": {
+			"lowerCase": "CapsLock",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"KeyA": {
+			"lowerCase": "a",
+			"upperCase": "A",
+			"shift": "A",
+			"isFn": false
+		},
+		"KeyS": {
+			"lowerCase": "s",
+			"upperCase": "S",
+			"shift": "S",
+			"isFn": false
+		},
+		"KeyD": {
+			"lowerCase": "d",
+			"upperCase": "D",
+			"shift": "D",
+			"isFn": false
+		},
+		"KeyF": {
+			"lowerCase": "f",
+			"upperCase": "F",
+			"shift": "F",
+			"isFn": false
+		},
+		"KeyG": {
+			"lowerCase": "g",
+			"upperCase": "G",
+			"shift": "G",
+			"isFn": false
+		},
+		"KeyH": {
+			"lowerCase": "h",
+			"upperCase": "H",
+			"shift": "H",
+			"isFn": false
+		},
+		"KeyJ": {
+			"lowerCase": "j",
+			"upperCase": "J",
+			"shift": "J",
+			"isFn": false
+		},
+		"KeyK": {
+			"lowerCase": "k",
+			"upperCase": "K",
+			"shift": "K",
+			"isFn": false
+		},
+		"KeyL": {
+			"lowerCase": "l",
+			"upperCase": "L",
+			"shift": "L",
+			"isFn": false
+		},
+		"Semicolon": {
+			"lowerCase": ";",
+			"upperCase": "",
+			"shift": ":",
+			"isFn": false
+		},
+		"Quote": {
+			"lowerCase": "'",
+			"upperCase": "",
+			"shift": "\"",
+			"isFn": false
+		},
+		"Enter": {
+			"lowerCase": "Enter",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"row3": "row",
+		"ShiftLeft": {
+			"lowerCase": "🠕 Shift",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"KeyZ": {
+			"lowerCase": "z",
+			"upperCase": "Z",
+			"shift": "Z",
+			"isFn": false
+		},
+		"KeyX": {
+			"lowerCase": "x",
+			"upperCase": "X",
+			"shift": "X",
+			"isFn": false
+		},
+		"KeyC": {
+			"lowerCase": "c",
+			"upperCase": "C",
+			"shift": "C",
+			"isFn": false
+		},
+		"KeyV": {
+			"lowerCase": "v",
+			"upperCase": "V",
+			"shift": "V",
+			"isFn": false
+		},
+		"KeyB": {
+			"lowerCase": "b",
+			"upperCase": "B",
+			"shift": "B",
+			"isFn": false
+		},
+		"KeyN": {
+			"lowerCase": "n",
+			"upperCase": "N",
+			"shift": "N",
+			"isFn": false
+		},
+		"KeyM": {
+			"lowerCase": "m",
+			"upperCase": "M",
+			"shift": "M",
+			"isFn": false
+		},
+		"Comma": {
+			"lowerCase": ",",
+			"upperCase": "",
+			"shift": "<",
+			"isFn": false
+		},
+		"Period": {
+			"lowerCase": ".",
+			"upperCase": "",
+			"shift": ">",
+			"isFn": false
+		},
+		"Slash": {
+			"lowerCase": "/",
+			"upperCase": "",
+			"shift": "?",
+			"isFn": false
+		},
+		"ArrowUp": {
+			"lowerCase": "⮝",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"ShiftRight": {
+			"lowerCase": "Shift 🠕",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": false
+		},
+		"row4": "row",
+		"ControlLeft": {
+			"lowerCase": "Ctrl",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"MetaLeft": {
+			"lowerCase": "ღ",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"AltLeft": {
+			"lowerCase": "Alt",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": true
+		},
+		"Space": {
+			"lowerCase": "",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"AltRight": {
+			"lowerCase": "Alt",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": true
+		},
+		"ArrowLeft": {
+			"lowerCase": "⮜",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"ArrowDown": {
+			"lowerCase": "⮟",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": true
+		},
+		"ArrowRight": {
+			"lowerCase": "⮞",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"ControlRight": {
+			"lowerCase": "Ctrl",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		}
+	},
+	"ru": {
+		"row0": "row",
+		"Backquote": {
+			"lowerCase": "ё",
+			"upperCase": "Ё",
+			"shift": "Ё",
+			"isFn": false
+		},
+		"Digit1": {
+			"lowerCase": "1",
+			"upperCase": "",
+			"shift": "!",
+			"isFn": false
+		},
+		"Digit2": {
+			"lowerCase": "2",
+			"upperCase": "",
+			"shift": "\"",
+			"isFn": false
+		},
+		"Digit3": {
+			"lowerCase": "3",
+			"upperCase": "",
+			"shift": "№",
+			"isFn": false
+		},
+		"Digit4": {
+			"lowerCase": "4",
+			"upperCase": "",
+			"shift": ";",
+			"isFn": false
+		},
+		"Digit5": {
+			"lowerCase": "5",
+			"upperCase": "",
+			"shift": "%",
+			"isFn": false
+		},
+		"Digit6": {
+			"lowerCase": "6",
+			"upperCase": "",
+			"shift": ":",
+			"isFn": false
+		},
+		"Digit7": {
+			"lowerCase": "7",
+			"upperCase": "",
+			"shift": "?",
+			"isFn": false
+		},
+		"Digit8": {
+			"lowerCase": "8",
+			"upperCase": "",
+			"shift": "*",
+			"isFn": false
+		},
+		"Digit9": {
+			"lowerCase": "9",
+			"upperCase": "",
+			"shift": "(",
+			"isFn": false
+		},
+		"Digit0": {
+			"lowerCase": "0",
+			"upperCase": "",
+			"shift": ")",
+			"isFn": false
+		},
+		"Minus": {
+			"lowerCase": "-",
+			"upperCase": "",
+			"shift": "_",
+			"isFn": false
+		},
+		"Equal": {
+			"lowerCase": "=",
+			"upperCase": "",
+			"shift": "+",
+			"isFn": false
+		},
+		"Backspace": {
+			"lowerCase": "Backspace",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"row1": "row",
+		"Tab": {
+			"lowerCase": "Tab",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"KeyQ": {
+			"lowerCase": "й",
+			"upperCase": "Й",
+			"shift": "Й",
+			"isFn": false
+		},
+		"KeyW": {
+			"lowerCase": "ц",
+			"upperCase": "Ц",
+			"shift": "Ц",
+			"isFn": false
+		},
+		"KeyE": {
+			"lowerCase": "у",
+			"upperCase": "У",
+			"shift": "У",
+			"isFn": false
+		},
+		"KeyR": {
+			"lowerCase": "к",
+			"upperCase": "К",
+			"shift": "К",
+			"isFn": false
+		},
+		"KeyT": {
+			"lowerCase": "е",
+			"upperCase": "Е",
+			"shift": "Е",
+			"isFn": false
+		},
+		"KeyY": {
+			"lowerCase": "н",
+			"upperCase": "Н",
+			"shift": "Н",
+			"isFn": false
+		},
+		"KeyU": {
+			"lowerCase": "г",
+			"upperCase": "Г",
+			"shift": "Г",
+			"isFn": false
+		},
+		"KeyI": {
+			"lowerCase": "ш",
+			"upperCase": "Ш",
+			"shift": "Ш",
+			"isFn": false
+		},
+		"KeyO": {
+			"lowerCase": "щ",
+			"upperCase": "Щ",
+			"shift": "Щ",
+			"isFn": false
+		},
+		"KeyP": {
+			"lowerCase": "з",
+			"upperCase": "З",
+			"shift": "З",
+			"isFn": false
+		},
+		"BracketLeft": {
+			"lowerCase": "х",
+			"upperCase": "Х",
+			"shift": "Х",
+			"isFn": false
+		},
+		"BracketRight": {
+			"lowerCase": "ъ",
+			"upperCase": "Ъ",
+			"shift": "Ъ",
+			"isFn": false
+		},
+		"Backslash": {
+			"lowerCase": "\\",
+			"upperCase": "",
+			"shift": "/",
+			"isFn": false
+		},
+		"Delete": {
+			"lowerCase": "Del",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"row2": "row",
+		"CapsLock": {
+			"lowerCase": "CapsLock",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"KeyA": {
+			"lowerCase": "ф",
+			"upperCase": "Ф",
+			"shift": "Ф",
+			"isFn": false
+		},
+		"KeyS": {
+			"lowerCase": "ы",
+			"upperCase": "Ы",
+			"shift": "Ы",
+			"isFn": false
+		},
+		"KeyD": {
+			"lowerCase": "в",
+			"upperCase": "В",
+			"shift": "В",
+			"isFn": false
+		},
+		"KeyF": {
+			"lowerCase": "а",
+			"upperCase": "А",
+			"shift": "А",
+			"isFn": false
+		},
+		"KeyG": {
+			"lowerCase": "п",
+			"upperCase": "П",
+			"shift": "П",
+			"isFn": false
+		},
+		"KeyH": {
+			"lowerCase": "р",
+			"upperCase": "Р",
+			"shift": "Р",
+			"isFn": false
+		},
+		"KeyJ": {
+			"lowerCase": "о",
+			"upperCase": "О",
+			"shift": "О",
+			"isFn": false
+		},
+		"KeyK": {
+			"lowerCase": "л",
+			"upperCase": "Л",
+			"shift": "Л",
+			"isFn": false
+		},
+		"KeyL": {
+			"lowerCase": "д",
+			"upperCase": "Д",
+			"shift": "Д",
+			"isFn": false
+		},
+		"Semicolon": {
+			"lowerCase": "ж",
+			"upperCase": "Ж",
+			"shift": "Ж",
+			"isFn": false
+		},
+		"Quote": {
+			"lowerCase": "э",
+			"upperCase": "Э",
+			"shift": "Э",
+			"isFn": false
+		},
+		"Enter": {
+			"lowerCase": "Enter",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"row3": "row",
+		"ShiftLeft": {
+			"lowerCase": "🠕 Shift",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"KeyZ": {
+			"lowerCase": "я",
+			"upperCase": "Я",
+			"shift": "Я",
+			"isFn": false
+		},
+		"KeyX": {
+			"lowerCase": "ч",
+			"upperCase": "Ч",
+			"shift": "Ч",
+			"isFn": false
+		},
+		"KeyC": {
+			"lowerCase": "с",
+			"upperCase": "С",
+			"shift": "С",
+			"isFn": false
+		},
+		"KeyV": {
+			"lowerCase": "м",
+			"upperCase": "М",
+			"shift": "М",
+			"isFn": false
+		},
+		"KeyB": {
+			"lowerCase": "и",
+			"upperCase": "И",
+			"shift": "И",
+			"isFn": false
+		},
+		"KeyN": {
+			"lowerCase": "Т",
+			"upperCase": "Т",
+			"shift": "Т",
+			"isFn": false
+		},
+		"KeyM": {
+			"lowerCase": "ь",
+			"upperCase": "Ь",
+			"shift": "Ь",
+			"isFn": false
+		},
+		"Comma": {
+			"lowerCase": "б",
+			"upperCase": "Б",
+			"shift": "Б",
+			"isFn": false
+		},
+		"Period": {
+			"lowerCase": "ю",
+			"upperCase": "Ю",
+			"shift": "Ю",
+			"isFn": false
+		},
+		"Slash": {
+			"lowerCase": ".",
+			"upperCase": ",",
+			"shift": ",",
+			"isFn": false
+		},
+		"ArrowUp": {
+			"lowerCase": "⮝",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"ShiftRight": {
+			"lowerCase": "Shift 🠕",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": false
+		},
+		"row4": "row",
+		"ControlLeft": {
+			"lowerCase": "Ctrl",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"MetaLeft": {
+			"lowerCase": "ღ",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"AltLeft": {
+			"lowerCase": "Alt",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": true
+		},
+		"Space": {
+			"lowerCase": "",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"AltRight": {
+			"lowerCase": "Alt",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": true
+		},
+		"ArrowLeft": {
+			"lowerCase": "⮜",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"ArrowDown": {
+			"lowerCase": "⮟",
+			"upperCase": "",
+			"shift": "~",
+			"isFn": true
+		},
+		"ArrowRight": {
+			"lowerCase": "⮞",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		},
+		"ControlRight": {
+			"lowerCase": "Ctrl",
+			"upperCase": "",
+			"shift": "",
+			"isFn": true
+		}
+	}
+}
