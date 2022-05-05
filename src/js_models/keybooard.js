@@ -9,7 +9,8 @@ export class Keyboard {
 
 		for (let key in layoutLang) {
 			const keyObj = layoutLang[key];
-			const classes = typeof keyObj === "object" ? ["keyboard__key"] : ["keyboard__row", key];
+			console.log();
+			const classes = !key.match(/row\d/) ? ["keyboard__key"] : ["keyboard__row", key];
 			const content = keyObj.letter;
 
 			createElement("div", content, classes, this.keys, keyObj);

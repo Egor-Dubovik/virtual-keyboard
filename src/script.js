@@ -1,8 +1,6 @@
-import { createElement } from "./js_models/createElement";
 import { storage } from "./js_models/localStorage";
-import { Keyboard } from "./js_models/keybooard";
-import languges from "./assets/languges.json";
-
+import { createArrOfAllElms } from "./js_models/creation_funсts/createArrAllElements";
+import { displayElms } from "./js_models/displayElms";
 import "./style/style.scss";
 
 
@@ -12,32 +10,19 @@ let currentLang = storage.get("language") ? storage.get("language") : "en";
 storage.set("language", "en");
 
 
+// work with elements -----------------------------------------------------------------
 
-
-
-
-// create elements -----------------------------------------------------------------
-const body = document.body;
 let allElements = [];
+allElements = createArrOfAllElms(allElements, currentLang);
 
-const createArrAllElements = () => {
-	createElement("div", null, ["wraper"], allElements, { parent: "body" });
-	createElement("section", null, ["content"], allElements, { parent: "wraper" });
-	createElement("textarea", null, ["textarea"], allElements, { parent: "content" });
-	createElement("div", null, ["keyboard"], allElements, { parent: "content" });
+displayElms(allElements);
 
-	const keybooard = new Keyboard(currentLang);
-	const layout = keybooard.createKeys(languges, createElement);
-	allElements = allElements.concat(layout);
+//-------------------------------------------------------------------------------------
 
-	createElement("footer", null, ["footer"], allElements, { parent: "wraper" });
-}
-createArrAllElements();
 
-allElements.forEach(el => console.log(el))
 
 // console.log(allElements);
-// allElements.forEach(el => body.append(el));
+// allElements.forEach(el => console.log(el));
 
 
 // body.addEventListener("keyup", (e) => {

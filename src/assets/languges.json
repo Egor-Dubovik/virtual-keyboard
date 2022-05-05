@@ -1,6 +1,8 @@
 {
 	"en": {
-		"row0": "row",
+		"row0": {
+			"parent": "keyboard"
+		},
 		"Backquote": {
 			"letter": "`",
 			"parent": "row0",
@@ -85,7 +87,9 @@
 			"shift": "",
 			"isFn": true
 		},
-		"row1": "row",
+		"row1": {
+			"parent": "keyboard"
+		},
 		"Tab": {
 			"letter": "Tab",
 			"parent": "row1",
@@ -176,7 +180,9 @@
 			"shift": "",
 			"isFn": true
 		},
-		"row2": "row",
+		"row2": {
+			"parent": "keyboard"
+		},
 		"CapsLock": {
 			"letter": "CapsLock",
 			"parent": "row2",
@@ -255,7 +261,9 @@
 			"shift": "",
 			"isFn": true
 		},
-		"row3": "row",
+		"row3": {
+			"parent": "keyboard"
+		},
 		"ShiftLeft": {
 			"letter": "🠕 Shift",
 			"parent": "row2",
@@ -334,7 +342,9 @@
 			"shift": "~",
 			"isFn": false
 		},
-		"row4": "row",
+		"row4": {
+			"parent": "row"
+		},
 		"ControlLeft": {
 			"letter": "Ctrl",
 			"parent": "row4",
@@ -391,7 +401,9 @@
 		}
 	},
 	"ru": {
-		"row0": "row",
+		"row0": {
+			"parent": "row"
+		},
 		"Backquote": {
 			"letter": "ё",
 			"parent": "row0",
@@ -476,7 +488,9 @@
 			"shift": "",
 			"isFn": true
 		},
-		"row1": "row",
+		"row1": {
+			"parent": "row"
+		},
 		"Tab": {
 			"letter": "Tab",
 			"parent": "row1",
@@ -567,7 +581,9 @@
 			"shift": "",
 			"isFn": true
 		},
-		"row2": "row",
+		"row2": {
+			"parent": "row"
+		},
 		"CapsLock": {
 			"letter": "CapsLock",
 			"parent": "row2",
@@ -646,7 +662,9 @@
 			"shift": "",
 			"isFn": true
 		},
-		"row3": "row",
+		"row3": {
+			"parent": "row"
+		},
 		"ShiftLeft": {
 			"letter": "🠕 Shift",
 			"parent": "row3",
@@ -725,7 +743,9 @@
 			"shift": "~",
 			"isFn": false
 		},
-		"row4": "row",
+		"row4": {
+			"parent": "row"
+		},
 		"ControlLeft": {
 			"letter": "Ctrl",
 			"parent": "row4",
