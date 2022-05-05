@@ -10,7 +10,7 @@ export class Keyboard {
 		for (let key in layoutLang) {
 			const keyObj = layoutLang[key];
 			console.log();
-			const classes = !key.match(/row\d/) ? ["keyboard__key"] : ["keyboard__row", key];
+			const classes = ["keyboard__key"];
 			const content = keyObj.letter;
 
 			createElement("div", content, classes, this.keys, keyObj);
