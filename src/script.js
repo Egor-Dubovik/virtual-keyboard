@@ -1,13 +1,8 @@
-
-// import { Post } from "@models/post";
-// import logo from "./assets/images/webpack-logo";
-// import "./models/babel";
-
-import languges from "./assets/languges.json";
 import { createElement } from "./js_models/createElement";
 import { storage } from "./js_models/localStorage";
 import { Keyboard } from "./js_models/keybooard";
-//
+import languges from "./assets/languges.json";
+
 import "./style/style.scss";
 
 
@@ -18,23 +13,28 @@ storage.set("language", "en");
 
 
 
-let keybooard = new Keyboard(currentLang);
-console.log();
-let layout = keybooard.createKeys(languges, createElement)
 
-layout.forEach(el => console.log(el))
+
 
 // create elements -----------------------------------------------------------------
 const body = document.body;
 let allElements = [];
 
-// const dataSet = {
-// 	"parent": "body",
-// 	"keycode": "KeyA",
-// 	"isFn": "false"
-// }
-// createElement("div", ["wraper", "wrap"], allElements, dataSet);
+const createArrAllElements = () => {
+	createElement("div", null, ["wraper"], allElements, { parent: "body" });
+	createElement("section", null, ["content"], allElements, { parent: "wraper" });
+	createElement("textarea", null, ["textarea"], allElements, { parent: "content" });
+	createElement("div", null, ["keyboard"], allElements, { parent: "content" });
 
+	const keybooard = new Keyboard(currentLang);
+	const layout = keybooard.createKeys(languges, createElement);
+	allElements = allElements.concat(layout);
+
+	createElement("footer", null, ["footer"], allElements, { parent: "wraper" });
+}
+createArrAllElements();
+
+allElements.forEach(el => console.log(el))
 
 // console.log(allElements);
 // allElements.forEach(el => body.append(el));
@@ -44,9 +44,3 @@ let allElements = [];
 // 	console.log(e.code, e.key);
 // })
 
-// const langg = languges.en;
-
-// for (let key in langg) {
-// 	console.log(langg[key]);
-// }
-// console.log();
