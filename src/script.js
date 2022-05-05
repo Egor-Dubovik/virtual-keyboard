@@ -3,17 +3,26 @@
 // import logo from "./assets/images/webpack-logo";
 // import "./models/babel";
 
-
-
+import languges from "./assets/languges.json";
+import { createElement } from "./js_models/createElement";
+import { storage } from "./js_models/localStorage";
+import { Keyboard } from "./js_models/keybooard";
+//
 import "./style/style.scss";
 
 
 // localStorage and language -------------------------------------------------------
 
+let currentLang = storage.get("language") ? storage.get("language") : "en";
+storage.set("language", "en");
 
 
 
+let keybooard = new Keyboard(currentLang);
+console.log();
+let layout = keybooard.createKeys(languges, createElement)
 
+layout.forEach(el => console.log(el))
 
 // create elements -----------------------------------------------------------------
 const body = document.body;

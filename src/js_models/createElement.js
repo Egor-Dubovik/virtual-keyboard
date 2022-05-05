@@ -1,17 +1,19 @@
-export const createElement = (name, classes, arr, attrData) => {
+export const createElement = (name, content, classes, arr, attrData) => {
 	const element = document.createElement(name);
 
 	classes.forEach(elClass => element.classList.add(elClass));
 
-	if (attrData) {
-		let { parent = "body", keycode = false, isFn = false } = attrData;
+	if (attrData && element.classList.contains("keyboard__key")) {
+		let { letter, parent = "body", shift = false, isFn = false } = attrData;
 
-		if (parent) element.dataset.parent = parent;
-		if (keycode) element.dataset.keycode = keycode;
-		if (isFn) element.dataset.isFn = isFn;
-
-
+		element.dataset.parent = parent;
+		element.dataset.letter = letter ? letter : null;
+		element.dataset.shift = shift ? shift : letter;
+		// if (isFn) element.dataset.isFn = isFn;
 	}
+
+	if (content) element.innerHTML = content;
+
 	arr.push(element);
 }
 

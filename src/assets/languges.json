@@ -2,390 +2,390 @@
 	"en": {
 		"row0": "row",
 		"Backquote": {
-			"lowerCase": "`",
-			"upperCase": "",
+			"letter": "`",
+			"parent": "row0",
 			"shift": "~",
 			"isFn": false
 		},
 		"Digit1": {
-			"lowerCase": "1",
-			"upperCase": "",
+			"letter": "1",
+			"parent": "row0",
 			"shift": "!",
 			"isFn": false
 		},
 		"Digit2": {
-			"lowerCase": "2",
-			"upperCase": "",
+			"letter": "2",
+			"parent": "row0",
 			"shift": "@",
 			"isFn": false
 		},
 		"Digit3": {
-			"lowerCase": "3",
-			"upperCase": "",
+			"letter": "3",
+			"parent": "row0",
 			"shift": "#",
 			"isFn": false
 		},
 		"Digit4": {
-			"lowerCase": "4",
-			"upperCase": "",
+			"letter": "4",
+			"parent": "row0",
 			"shift": "$",
 			"isFn": false
 		},
 		"Digit5": {
-			"lowerCase": "5",
-			"upperCase": "",
+			"letter": "5",
+			"parent": "row0",
 			"shift": "%",
 			"isFn": false
 		},
 		"Digit6": {
-			"lowerCase": "6",
-			"upperCase": "",
+			"letter": "6",
+			"parent": "row0",
 			"shift": "^",
 			"isFn": false
 		},
 		"Digit7": {
-			"lowerCase": "7",
-			"upperCase": "",
+			"letter": "7",
+			"parent": "row0",
 			"shift": "&",
 			"isFn": false
 		},
 		"Digit8": {
-			"lowerCase": "8",
-			"upperCase": "",
+			"letter": "8",
+			"parent": "row0",
 			"shift": "*",
 			"isFn": false
 		},
 		"Digit9": {
-			"lowerCase": "9",
-			"upperCase": "",
+			"letter": "9",
+			"parent": "row0",
 			"shift": "(",
 			"isFn": false
 		},
 		"Digit0": {
-			"lowerCase": "0",
-			"upperCase": "",
+			"letter": "0",
+			"parent": "row0",
 			"shift": ")",
 			"isFn": false
 		},
 		"Minus": {
-			"lowerCase": "-",
-			"upperCase": "",
+			"letter": "-",
+			"parent": "row0",
 			"shift": "_",
 			"isFn": false
 		},
 		"Equal": {
-			"lowerCase": "=",
-			"upperCase": "",
+			"letter": "=",
+			"parent": "row0",
 			"shift": "+",
 			"isFn": false
 		},
 		"Backspace": {
-			"lowerCase": "Backspace",
-			"upperCase": "",
+			"letter": "Backspace",
+			"parent": "row0",
 			"shift": "",
 			"isFn": true
 		},
 		"row1": "row",
 		"Tab": {
-			"lowerCase": "Tab",
-			"upperCase": "",
+			"letter": "Tab",
+			"parent": "row1",
 			"shift": "",
 			"isFn": true
 		},
 		"KeyQ": {
-			"lowerCase": "q",
-			"upperCase": "Q",
+			"letter": "q",
+			"parent": "row1",
 			"shift": "Q",
 			"isFn": false
 		},
 		"KeyW": {
-			"lowerCase": "w",
-			"upperCase": "W",
+			"letter": "w",
+			"parent": "row1",
 			"shift": "W",
 			"isFn": false
 		},
 		"KeyE": {
-			"lowerCase": "e",
-			"upperCase": "E",
+			"letter": "e",
+			"parent": "row1",
 			"shift": "E",
 			"isFn": false
 		},
 		"KeyR": {
-			"lowerCase": "r",
-			"upperCase": "R",
+			"letter": "r",
+			"parent": "row1",
 			"shift": "R",
 			"isFn": false
 		},
 		"KeyT": {
-			"lowerCase": "t",
-			"upperCase": "T",
+			"letter": "t",
+			"parent": "row1",
 			"shift": "T",
 			"isFn": false
 		},
 		"KeyY": {
-			"lowerCase": "y",
-			"upperCase": "Y",
+			"letter": "y",
+			"parent": "row1",
 			"shift": "Y",
 			"isFn": false
 		},
 		"KeyU": {
-			"lowerCase": "u",
-			"upperCase": "U",
+			"letter": "u",
+			"parent": "row1",
 			"shift": "U",
 			"isFn": false
 		},
 		"KeyI": {
-			"lowerCase": "i",
-			"upperCase": "I",
+			"letter": "i",
+			"parent": "row1",
 			"shift": "I",
 			"isFn": false
 		},
 		"KeyO": {
-			"lowerCase": "o",
-			"upperCase": "O",
+			"letter": "o",
+			"parent": "row1",
 			"shift": "O",
 			"isFn": false
 		},
 		"KeyP": {
-			"lowerCase": "p",
-			"upperCase": "P",
+			"letter": "p",
+			"parent": "row1",
 			"shift": "P",
 			"isFn": false
 		},
 		"BracketLeft": {
-			"lowerCase": "[",
-			"upperCase": "",
+			"letter": "[",
+			"parent": "row1",
 			"shift": "{",
 			"isFn": false
 		},
 		"BracketRight": {
-			"lowerCase": "]",
-			"upperCase": "",
+			"letter": "]",
+			"parent": "row1",
 			"shift": "}",
 			"isFn": false
 		},
 		"Backslash": {
-			"lowerCase": "\\",
-			"upperCase": "",
+			"letter": "\\",
+			"parent": "row1",
 			"shift": "|",
 			"isFn": false
 		},
 		"Delete": {
-			"lowerCase": "Del",
-			"upperCase": "",
+			"letter": "Del",
+			"parent": "row1",
 			"shift": "",
 			"isFn": true
 		},
 		"row2": "row",
 		"CapsLock": {
-			"lowerCase": "CapsLock",
-			"upperCase": "",
+			"letter": "CapsLock",
+			"parent": "row2",
 			"shift": "",
 			"isFn": true
 		},
 		"KeyA": {
-			"lowerCase": "a",
-			"upperCase": "A",
+			"letter": "a",
+			"parent": "row2",
 			"shift": "A",
 			"isFn": false
 		},
 		"KeyS": {
-			"lowerCase": "s",
-			"upperCase": "S",
+			"letter": "s",
+			"parent": "row2",
 			"shift": "S",
 			"isFn": false
 		},
 		"KeyD": {
-			"lowerCase": "d",
-			"upperCase": "D",
+			"letter": "d",
+			"parent": "row2",
 			"shift": "D",
 			"isFn": false
 		},
 		"KeyF": {
-			"lowerCase": "f",
-			"upperCase": "F",
+			"letter": "f",
+			"parent": "row2",
 			"shift": "F",
 			"isFn": false
 		},
 		"KeyG": {
-			"lowerCase": "g",
-			"upperCase": "G",
+			"letter": "g",
+			"parent": "row2",
 			"shift": "G",
 			"isFn": false
 		},
 		"KeyH": {
-			"lowerCase": "h",
-			"upperCase": "H",
+			"letter": "h",
+			"parent": "row2",
 			"shift": "H",
 			"isFn": false
 		},
 		"KeyJ": {
-			"lowerCase": "j",
-			"upperCase": "J",
+			"letter": "j",
+			"parent": "row2",
 			"shift": "J",
 			"isFn": false
 		},
 		"KeyK": {
-			"lowerCase": "k",
-			"upperCase": "K",
+			"letter": "k",
+			"parent": "row2",
 			"shift": "K",
 			"isFn": false
 		},
 		"KeyL": {
-			"lowerCase": "l",
-			"upperCase": "L",
+			"letter": "l",
+			"parent": "row2",
 			"shift": "L",
 			"isFn": false
 		},
 		"Semicolon": {
-			"lowerCase": ";",
-			"upperCase": "",
+			"letter": ";",
+			"parent": "row2",
 			"shift": ":",
 			"isFn": false
 		},
 		"Quote": {
-			"lowerCase": "'",
-			"upperCase": "",
+			"letter": "'",
+			"parent": "row2",
 			"shift": "\"",
 			"isFn": false
 		},
 		"Enter": {
-			"lowerCase": "Enter",
-			"upperCase": "",
+			"letter": "Enter",
+			"parent": "row2",
 			"shift": "",
 			"isFn": true
 		},
 		"row3": "row",
 		"ShiftLeft": {
-			"lowerCase": "🠕 Shift",
-			"upperCase": "",
+			"letter": "🠕 Shift",
+			"parent": "row2",
 			"shift": "",
 			"isFn": true
 		},
 		"KeyZ": {
-			"lowerCase": "z",
-			"upperCase": "Z",
+			"letter": "z",
+			"parent": "row3",
 			"shift": "Z",
 			"isFn": false
 		},
 		"KeyX": {
-			"lowerCase": "x",
-			"upperCase": "X",
+			"letter": "x",
+			"parent": "row3",
 			"shift": "X",
 			"isFn": false
 		},
 		"KeyC": {
-			"lowerCase": "c",
-			"upperCase": "C",
+			"letter": "c",
+			"parent": "row3",
 			"shift": "C",
 			"isFn": false
 		},
 		"KeyV": {
-			"lowerCase": "v",
-			"upperCase": "V",
+			"letter": "v",
+			"parent": "row3",
 			"shift": "V",
 			"isFn": false
 		},
 		"KeyB": {
-			"lowerCase": "b",
-			"upperCase": "B",
+			"letter": "b",
+			"parent": "row3",
 			"shift": "B",
 			"isFn": false
 		},
 		"KeyN": {
-			"lowerCase": "n",
-			"upperCase": "N",
+			"letter": "n",
+			"parent": "row3",
 			"shift": "N",
 			"isFn": false
 		},
 		"KeyM": {
-			"lowerCase": "m",
-			"upperCase": "M",
+			"letter": "m",
+			"parent": "row3",
 			"shift": "M",
 			"isFn": false
 		},
 		"Comma": {
-			"lowerCase": ",",
-			"upperCase": "",
+			"letter": ",",
+			"parent": "row3",
 			"shift": "<",
 			"isFn": false
 		},
 		"Period": {
-			"lowerCase": ".",
-			"upperCase": "",
+			"letter": ".",
+			"parent": "row3",
 			"shift": ">",
 			"isFn": false
 		},
 		"Slash": {
-			"lowerCase": "/",
-			"upperCase": "",
+			"letter": "/",
+			"parent": "row3",
 			"shift": "?",
 			"isFn": false
 		},
 		"ArrowUp": {
-			"lowerCase": "⮝",
-			"upperCase": "",
+			"letter": "⮝",
+			"parent": "row3",
 			"shift": "",
 			"isFn": true
 		},
 		"ShiftRight": {
-			"lowerCase": "Shift 🠕",
-			"upperCase": "",
+			"letter": "Shift 🠕",
+			"parent": "row3",
 			"shift": "~",
 			"isFn": false
 		},
 		"row4": "row",
 		"ControlLeft": {
-			"lowerCase": "Ctrl",
-			"upperCase": "",
+			"letter": "Ctrl",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"MetaLeft": {
-			"lowerCase": "ღ",
-			"upperCase": "",
+			"letter": "ღ",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"AltLeft": {
-			"lowerCase": "Alt",
-			"upperCase": "",
+			"letter": "Alt",
+			"parent": "row4",
 			"shift": "~",
 			"isFn": true
 		},
 		"Space": {
-			"lowerCase": "",
-			"upperCase": "",
+			"letter": "",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"AltRight": {
-			"lowerCase": "Alt",
-			"upperCase": "",
+			"letter": "Alt",
+			"parent": "row4",
 			"shift": "~",
 			"isFn": true
 		},
 		"ArrowLeft": {
-			"lowerCase": "⮜",
-			"upperCase": "",
+			"letter": "⮜",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"ArrowDown": {
-			"lowerCase": "⮟",
-			"upperCase": "",
-			"shift": "~",
+			"letter": "⮟",
+			"parent": "row4",
+			"shift": "",
 			"isFn": true
 		},
 		"ArrowRight": {
-			"lowerCase": "⮞",
-			"upperCase": "",
+			"letter": "⮞",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"ControlRight": {
-			"lowerCase": "Ctrl",
-			"upperCase": "",
+			"letter": "Ctrl",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		}
@@ -393,390 +393,390 @@
 	"ru": {
 		"row0": "row",
 		"Backquote": {
-			"lowerCase": "ё",
-			"upperCase": "Ё",
+			"letter": "ё",
+			"parent": "row0",
 			"shift": "Ё",
 			"isFn": false
 		},
 		"Digit1": {
-			"lowerCase": "1",
-			"upperCase": "",
+			"letter": "1",
+			"parent": "row0",
 			"shift": "!",
 			"isFn": false
 		},
 		"Digit2": {
-			"lowerCase": "2",
-			"upperCase": "",
+			"letter": "2",
+			"parent": "row0",
 			"shift": "\"",
 			"isFn": false
 		},
 		"Digit3": {
-			"lowerCase": "3",
-			"upperCase": "",
+			"letter": "3",
+			"parent": "row0",
 			"shift": "№",
 			"isFn": false
 		},
 		"Digit4": {
-			"lowerCase": "4",
-			"upperCase": "",
+			"letter": "4",
+			"parent": "row0",
 			"shift": ";",
 			"isFn": false
 		},
 		"Digit5": {
-			"lowerCase": "5",
-			"upperCase": "",
+			"letter": "5",
+			"parent": "row0",
 			"shift": "%",
 			"isFn": false
 		},
 		"Digit6": {
-			"lowerCase": "6",
-			"upperCase": "",
+			"letter": "6",
+			"parent": "row0",
 			"shift": ":",
 			"isFn": false
 		},
 		"Digit7": {
-			"lowerCase": "7",
-			"upperCase": "",
+			"letter": "7",
+			"parent": "row0",
 			"shift": "?",
 			"isFn": false
 		},
 		"Digit8": {
-			"lowerCase": "8",
-			"upperCase": "",
+			"letter": "8",
+			"parent": "row0",
 			"shift": "*",
 			"isFn": false
 		},
 		"Digit9": {
-			"lowerCase": "9",
-			"upperCase": "",
+			"letter": "9",
+			"parent": "row0",
 			"shift": "(",
 			"isFn": false
 		},
 		"Digit0": {
-			"lowerCase": "0",
-			"upperCase": "",
+			"letter": "0",
+			"parent": "row0",
 			"shift": ")",
 			"isFn": false
 		},
 		"Minus": {
-			"lowerCase": "-",
-			"upperCase": "",
+			"letter": "-",
+			"parent": "row0",
 			"shift": "_",
 			"isFn": false
 		},
 		"Equal": {
-			"lowerCase": "=",
-			"upperCase": "",
+			"letter": "=",
+			"parent": "row0",
 			"shift": "+",
 			"isFn": false
 		},
 		"Backspace": {
-			"lowerCase": "Backspace",
-			"upperCase": "",
+			"letter": "Backspace",
+			"parent": "row0",
 			"shift": "",
 			"isFn": true
 		},
 		"row1": "row",
 		"Tab": {
-			"lowerCase": "Tab",
-			"upperCase": "",
+			"letter": "Tab",
+			"parent": "row1",
 			"shift": "",
 			"isFn": true
 		},
 		"KeyQ": {
-			"lowerCase": "й",
-			"upperCase": "Й",
+			"letter": "й",
+			"parent": "row1",
 			"shift": "Й",
 			"isFn": false
 		},
 		"KeyW": {
-			"lowerCase": "ц",
-			"upperCase": "Ц",
+			"letter": "ц",
+			"parent": "row1",
 			"shift": "Ц",
 			"isFn": false
 		},
 		"KeyE": {
-			"lowerCase": "у",
-			"upperCase": "У",
+			"letter": "у",
+			"parent": "row1",
 			"shift": "У",
 			"isFn": false
 		},
 		"KeyR": {
-			"lowerCase": "к",
-			"upperCase": "К",
+			"letter": "к",
+			"parent": "row1",
 			"shift": "К",
 			"isFn": false
 		},
 		"KeyT": {
-			"lowerCase": "е",
-			"upperCase": "Е",
+			"letter": "е",
+			"parent": "row1",
 			"shift": "Е",
 			"isFn": false
 		},
 		"KeyY": {
-			"lowerCase": "н",
-			"upperCase": "Н",
+			"letter": "н",
+			"parent": "row1",
 			"shift": "Н",
 			"isFn": false
 		},
 		"KeyU": {
-			"lowerCase": "г",
-			"upperCase": "Г",
+			"letter": "г",
+			"parent": "row1",
 			"shift": "Г",
 			"isFn": false
 		},
 		"KeyI": {
-			"lowerCase": "ш",
-			"upperCase": "Ш",
+			"letter": "ш",
+			"parent": "row1",
 			"shift": "Ш",
 			"isFn": false
 		},
 		"KeyO": {
-			"lowerCase": "щ",
-			"upperCase": "Щ",
+			"letter": "щ",
+			"parent": "row1",
 			"shift": "Щ",
 			"isFn": false
 		},
 		"KeyP": {
-			"lowerCase": "з",
-			"upperCase": "З",
+			"letter": "з",
+			"parent": "row1",
 			"shift": "З",
 			"isFn": false
 		},
 		"BracketLeft": {
-			"lowerCase": "х",
-			"upperCase": "Х",
+			"letter": "х",
+			"parent": "row1",
 			"shift": "Х",
 			"isFn": false
 		},
 		"BracketRight": {
-			"lowerCase": "ъ",
-			"upperCase": "Ъ",
+			"letter": "ъ",
+			"parent": "row1",
 			"shift": "Ъ",
 			"isFn": false
 		},
 		"Backslash": {
-			"lowerCase": "\\",
-			"upperCase": "",
+			"letter": "\\",
+			"parent": "row1",
 			"shift": "/",
 			"isFn": false
 		},
 		"Delete": {
-			"lowerCase": "Del",
-			"upperCase": "",
+			"letter": "Del",
+			"parent": "row1",
 			"shift": "",
 			"isFn": true
 		},
 		"row2": "row",
 		"CapsLock": {
-			"lowerCase": "CapsLock",
-			"upperCase": "",
+			"letter": "CapsLock",
+			"parent": "row2",
 			"shift": "",
 			"isFn": true
 		},
 		"KeyA": {
-			"lowerCase": "ф",
-			"upperCase": "Ф",
+			"letter": "ф",
+			"parent": "row2",
 			"shift": "Ф",
 			"isFn": false
 		},
 		"KeyS": {
-			"lowerCase": "ы",
-			"upperCase": "Ы",
+			"letter": "ы",
+			"parent": "row2",
 			"shift": "Ы",
 			"isFn": false
 		},
 		"KeyD": {
-			"lowerCase": "в",
-			"upperCase": "В",
+			"letter": "в",
+			"parent": "row2",
 			"shift": "В",
 			"isFn": false
 		},
 		"KeyF": {
-			"lowerCase": "а",
-			"upperCase": "А",
+			"letter": "а",
+			"parent": "row2",
 			"shift": "А",
 			"isFn": false
 		},
 		"KeyG": {
-			"lowerCase": "п",
-			"upperCase": "П",
+			"letter": "п",
+			"parent": "row2",
 			"shift": "П",
 			"isFn": false
 		},
 		"KeyH": {
-			"lowerCase": "р",
-			"upperCase": "Р",
+			"letter": "р",
+			"parent": "row2",
 			"shift": "Р",
 			"isFn": false
 		},
 		"KeyJ": {
-			"lowerCase": "о",
-			"upperCase": "О",
+			"letter": "о",
+			"parent": "row2",
 			"shift": "О",
 			"isFn": false
 		},
 		"KeyK": {
-			"lowerCase": "л",
-			"upperCase": "Л",
+			"letter": "л",
+			"parent": "row2",
 			"shift": "Л",
 			"isFn": false
 		},
 		"KeyL": {
-			"lowerCase": "д",
-			"upperCase": "Д",
+			"letter": "д",
+			"parent": "row2",
 			"shift": "Д",
 			"isFn": false
 		},
 		"Semicolon": {
-			"lowerCase": "ж",
-			"upperCase": "Ж",
+			"letter": "ж",
+			"parent": "row2",
 			"shift": "Ж",
 			"isFn": false
 		},
 		"Quote": {
-			"lowerCase": "э",
-			"upperCase": "Э",
+			"letter": "э",
+			"parent": "row2",
 			"shift": "Э",
 			"isFn": false
 		},
 		"Enter": {
-			"lowerCase": "Enter",
-			"upperCase": "",
+			"letter": "Enter",
+			"parent": "row2",
 			"shift": "",
 			"isFn": true
 		},
 		"row3": "row",
 		"ShiftLeft": {
-			"lowerCase": "🠕 Shift",
-			"upperCase": "",
+			"letter": "🠕 Shift",
+			"parent": "row3",
 			"shift": "",
 			"isFn": true
 		},
 		"KeyZ": {
-			"lowerCase": "я",
-			"upperCase": "Я",
+			"letter": "я",
+			"parent": "row3",
 			"shift": "Я",
 			"isFn": false
 		},
 		"KeyX": {
-			"lowerCase": "ч",
-			"upperCase": "Ч",
+			"letter": "ч",
+			"parent": "row3",
 			"shift": "Ч",
 			"isFn": false
 		},
 		"KeyC": {
-			"lowerCase": "с",
-			"upperCase": "С",
+			"letter": "с",
+			"parent": "row3",
 			"shift": "С",
 			"isFn": false
 		},
 		"KeyV": {
-			"lowerCase": "м",
-			"upperCase": "М",
+			"letter": "м",
+			"parent": "row3",
 			"shift": "М",
 			"isFn": false
 		},
 		"KeyB": {
-			"lowerCase": "и",
-			"upperCase": "И",
+			"letter": "и",
+			"parent": "row3",
 			"shift": "И",
 			"isFn": false
 		},
 		"KeyN": {
-			"lowerCase": "Т",
-			"upperCase": "Т",
+			"letter": "Т",
+			"parent": "row3",
 			"shift": "Т",
 			"isFn": false
 		},
 		"KeyM": {
-			"lowerCase": "ь",
-			"upperCase": "Ь",
+			"letter": "ь",
+			"parent": "row3",
 			"shift": "Ь",
 			"isFn": false
 		},
 		"Comma": {
-			"lowerCase": "б",
-			"upperCase": "Б",
+			"letter": "б",
+			"parent": "row3",
 			"shift": "Б",
 			"isFn": false
 		},
 		"Period": {
-			"lowerCase": "ю",
-			"upperCase": "Ю",
+			"letter": "ю",
+			"parent": "row3",
 			"shift": "Ю",
 			"isFn": false
 		},
 		"Slash": {
-			"lowerCase": ".",
-			"upperCase": ",",
+			"letter": ".",
+			"parent": "row3",
 			"shift": ",",
 			"isFn": false
 		},
 		"ArrowUp": {
-			"lowerCase": "⮝",
-			"upperCase": "",
+			"letter": "⮝",
+			"parent": "row3",
 			"shift": "",
 			"isFn": true
 		},
 		"ShiftRight": {
-			"lowerCase": "Shift 🠕",
-			"upperCase": "",
+			"letter": "Shift 🠕",
+			"parent": "row3",
 			"shift": "~",
 			"isFn": false
 		},
 		"row4": "row",
 		"ControlLeft": {
-			"lowerCase": "Ctrl",
-			"upperCase": "",
+			"letter": "Ctrl",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"MetaLeft": {
-			"lowerCase": "ღ",
-			"upperCase": "",
+			"letter": "ღ",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"AltLeft": {
-			"lowerCase": "Alt",
-			"upperCase": "",
+			"letter": "Alt",
+			"parent": "row4",
 			"shift": "~",
 			"isFn": true
 		},
 		"Space": {
-			"lowerCase": "",
-			"upperCase": "",
+			"letter": "",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"AltRight": {
-			"lowerCase": "Alt",
-			"upperCase": "",
+			"letter": "Alt",
+			"parent": "row4",
 			"shift": "~",
 			"isFn": true
 		},
 		"ArrowLeft": {
-			"lowerCase": "⮜",
-			"upperCase": "",
+			"letter": "⮜",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"ArrowDown": {
-			"lowerCase": "⮟",
-			"upperCase": "",
+			"letter": "⮟",
+			"parent": "row4",
 			"shift": "~",
 			"isFn": true
 		},
 		"ArrowRight": {
-			"lowerCase": "⮞",
-			"upperCase": "",
+			"letter": "⮞",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		},
 		"ControlRight": {
-			"lowerCase": "Ctrl",
-			"upperCase": "",
+			"letter": "Ctrl",
+			"parent": "row4",
 			"shift": "",
 			"isFn": true
 		}
