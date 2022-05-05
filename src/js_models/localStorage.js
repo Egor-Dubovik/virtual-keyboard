@@ -6,7 +6,7 @@ export const storage = {
 		localStorage.removeItem(key, value);
 	},
 	get: (key) => {
-		localStorage.getItem(key, value);
+		return localStorage.getItem(key);
 	},
 }
 
