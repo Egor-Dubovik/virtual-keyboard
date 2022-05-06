@@ -1,774 +1,961 @@
 {
 	"en": {
 		"Backquote": {
+			"code": "Backquote",
 			"letter": "`",
 			"parent": "keyboard",
 			"shift": "~",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit1": {
+			"code": "Digit1",
 			"letter": "1",
 			"parent": "keyboard",
 			"shift": "!",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit2": {
+			"code": "Digit2",
 			"letter": "2",
 			"parent": "keyboard",
 			"shift": "@",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit3": {
+			"code": "Digit3",
 			"letter": "3",
 			"parent": "keyboard",
 			"shift": "#",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit4": {
+			"code": "Digit4",
 			"letter": "4",
 			"parent": "keyboard",
 			"shift": "$",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit5": {
+			"code": "Digit5",
 			"letter": "5",
 			"parent": "keyboard",
 			"shift": "%",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit6": {
+			"code": "Digit6",
 			"letter": "6",
 			"parent": "keyboard",
 			"shift": "^",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit7": {
+			"code": "Digit7",
 			"letter": "7",
 			"parent": "keyboard",
 			"shift": "&",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit8": {
+			"code": "Digit8",
 			"letter": "8",
 			"parent": "keyboard",
 			"shift": "*",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit9": {
+			"code": "Digit9",
 			"letter": "9",
 			"parent": "keyboard",
 			"shift": "(",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit0": {
+			"code": "Digit0",
 			"letter": "0",
 			"parent": "keyboard",
 			"shift": ")",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Minus": {
+			"code": "Minus",
 			"letter": "-",
 			"parent": "keyboard",
 			"shift": "_",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Equal": {
+			"code": "Equal",
 			"letter": "=",
 			"parent": "keyboard",
 			"shift": "+",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Backspace": {
+			"code": "Backspace",
 			"letter": "Backspace",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"Tab": {
+			"code": "Tab",
 			"letter": "Tab",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"KeyQ": {
+			"code": "KeyQ",
 			"letter": "q",
+			"caps": "Q",
 			"parent": "keyboard",
 			"shift": "Q",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyW": {
+			"code": "KeyW",
 			"letter": "w",
+			"caps": "W",
 			"parent": "keyboard",
 			"shift": "W",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyE": {
+			"code": "KeyE",
 			"letter": "e",
+			"caps": "E",
 			"parent": "keyboard",
 			"shift": "E",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyR": {
+			"code": "KeyR",
 			"letter": "r",
+			"caps": "R",
 			"parent": "keyboard",
 			"shift": "R",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyT": {
+			"code": "KeyT",
 			"letter": "t",
+			"caps": "T",
 			"parent": "keyboard",
 			"shift": "T",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyY": {
+			"code": "KeyY",
 			"letter": "y",
+			"caps": "Y",
 			"parent": "keyboard",
 			"shift": "Y",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyU": {
+			"code": "KeyU",
 			"letter": "u",
+			"caps": "U",
 			"parent": "keyboard",
 			"shift": "U",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyI": {
+			"code": "KeyI",
 			"letter": "i",
+			"caps": "I",
 			"parent": "keyboard",
 			"shift": "I",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyO": {
+			"code": "KeyO",
 			"letter": "o",
+			"caps": "O",
 			"parent": "keyboard",
 			"shift": "O",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyP": {
+			"code": "KeyP",
 			"letter": "p",
+			"caps": "P",
 			"parent": "keyboard",
 			"shift": "P",
-			"isFn": false
+			"isFn": "false"
 		},
 		"BracketLeft": {
+			"code": "BracketLeft",
 			"letter": "[",
 			"parent": "keyboard",
 			"shift": "{",
-			"isFn": false
+			"isFn": "false"
 		},
 		"BracketRight": {
+			"code": "BracketRight",
 			"letter": "]",
 			"parent": "keyboard",
 			"shift": "}",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Backslash": {
+			"code": "Backslash",
 			"letter": "\\",
 			"parent": "keyboard",
 			"shift": "|",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Delete": {
+			"code": "Delete",
 			"letter": "Del",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"CapsLock": {
+			"code": "CapsLock",
 			"letter": "CapsLock",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"KeyA": {
+			"code": "KeyA",
 			"letter": "a",
+			"caps": "A",
 			"parent": "keyboard",
 			"shift": "A",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyS": {
+			"code": "KeyS",
 			"letter": "s",
+			"caps": "S",
 			"parent": "keyboard",
 			"shift": "S",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyD": {
+			"code": "KeyD",
 			"letter": "d",
+			"caps": "D",
 			"parent": "keyboard",
 			"shift": "D",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyF": {
+			"code": "KeyF",
 			"letter": "f",
+			"caps": "F",
 			"parent": "keyboard",
 			"shift": "F",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyG": {
+			"code": "KeyG",
 			"letter": "g",
+			"caps": "G",
 			"parent": "keyboard",
 			"shift": "G",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyH": {
+			"code": "KeyH",
 			"letter": "h",
+			"caps": "H",
 			"parent": "keyboard",
 			"shift": "H",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyJ": {
+			"code": "KeyJ",
 			"letter": "j",
+			"caps": "J",
 			"parent": "keyboard",
 			"shift": "J",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyK": {
+			"code": "KeyK",
 			"letter": "k",
+			"caps": "K",
 			"parent": "keyboard",
 			"shift": "K",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyL": {
+			"code": "KeyL",
 			"letter": "l",
+			"caps": "L",
 			"parent": "keyboard",
 			"shift": "L",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Semicolon": {
+			"code": "Semicolon",
 			"letter": ";",
 			"parent": "keyboard",
 			"shift": ":",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Quote": {
+			"code": "Quote",
 			"letter": "'",
 			"parent": "keyboard",
 			"shift": "\"",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Enter": {
+			"code": "Enter",
 			"letter": "Enter",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"ShiftLeft": {
+			"code": "ShiftLeft",
 			"letter": "🠕 Shift",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"KeyZ": {
+			"code": "KeyZ",
 			"letter": "z",
+			"caps": "Z",
 			"parent": "keyboard",
 			"shift": "Z",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyX": {
+			"code": "KeyX",
 			"letter": "x",
+			"caps": "X",
 			"parent": "keyboard",
 			"shift": "X",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyC": {
+			"code": "KeyC",
 			"letter": "c",
+			"caps": "C",
 			"parent": "keyboard",
 			"shift": "C",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyV": {
+			"code": "KeyV",
 			"letter": "v",
+			"caps": "V",
 			"parent": "keyboard",
 			"shift": "V",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyB": {
+			"code": "KeyB",
 			"letter": "b",
+			"caps": "B",
 			"parent": "keyboard",
 			"shift": "B",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyN": {
+			"code": "KeyN",
 			"letter": "n",
+			"caps": "N",
 			"parent": "keyboard",
 			"shift": "N",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyM": {
+			"code": "KeyM",
 			"letter": "m",
+			"caps": "M",
 			"parent": "keyboard",
 			"shift": "M",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Comma": {
+			"code": "Comma",
 			"letter": ",",
 			"parent": "keyboard",
 			"shift": "<",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Period": {
+			"code": "Period",
 			"letter": ".",
 			"parent": "keyboard",
 			"shift": ">",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Slash": {
+			"code": "Slash",
 			"letter": "/",
 			"parent": "keyboard",
 			"shift": "?",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Arkeyboardp": {
+			"code": "Arkeyboardp",
 			"letter": "⮝",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"ShiftRight": {
+			"code": "ShiftRight",
 			"letter": "Shift 🠕",
 			"parent": "keyboard",
 			"shift": "~",
-			"isFn": false
+			"isFn": "false"
 		},
 		"ControlLeft": {
+			"code": "ControlLeft",
 			"letter": "Ctrl",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"MetaLeft": {
+			"code": "MetaLeft",
 			"letter": "ღ",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"AltLeft": {
+			"code": "AltLeft",
 			"letter": "Alt",
-			"parent": "keyboard",
-			"shift": "~",
-			"isFn": true
-		},
-		"Space": {
-			"letter": "",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
+		},
+		"Space": {
+			"code": "Space",
+			"letter": " ",
+			"parent": "keyboard",
+			"shift": " ",
+			"isFn": "false"
 		},
 		"AltRight": {
+			"code": "AltRight",
 			"letter": "Alt",
 			"parent": "keyboard",
-			"shift": "~",
-			"isFn": true
+			"shift": "",
+			"isFn": "true"
 		},
 		"Arkeyboardeft": {
+			"code": "Arkeyboardeft",
 			"letter": "⮜",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"Arkeyboardown": {
+			"code": "Arkeyboardown",
 			"letter": "⮟",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"Arkeyboardight": {
+			"code": "Arkeyboardight",
 			"letter": "⮞",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"ControlRight": {
+			"code": "ControlRight",
 			"letter": "Ctrl",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		}
 	},
 	"ru": {
 		"Backquote": {
+			"code": "Backquote",
 			"letter": "ё",
+			"caps": "Ё",
 			"parent": "keyboard",
 			"shift": "Ё",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit1": {
+			"code": "Digit1",
 			"letter": "1",
 			"parent": "keyboard",
 			"shift": "!",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit2": {
+			"code": "Digit2",
 			"letter": "2",
 			"parent": "keyboard",
 			"shift": "\"",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit3": {
+			"code": "Digit3",
 			"letter": "3",
 			"parent": "keyboard",
 			"shift": "№",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit4": {
+			"code": "Digit4",
 			"letter": "4",
 			"parent": "keyboard",
 			"shift": ";",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit5": {
+			"code": "Digit5",
 			"letter": "5",
 			"parent": "keyboard",
 			"shift": "%",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit6": {
+			"code": "Digit6",
 			"letter": "6",
 			"parent": "keyboard",
 			"shift": ":",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit7": {
+			"code": "Digit7",
 			"letter": "7",
 			"parent": "keyboard",
 			"shift": "?",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit8": {
+			"code": "Digit8",
 			"letter": "8",
 			"parent": "keyboard",
 			"shift": "*",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit9": {
+			"code": "Digit9",
 			"letter": "9",
 			"parent": "keyboard",
 			"shift": "(",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Digit0": {
+			"code": "Digit0",
 			"letter": "0",
 			"parent": "keyboard",
 			"shift": ")",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Minus": {
+			"code": "Minus",
 			"letter": "-",
 			"parent": "keyboard",
 			"shift": "_",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Equal": {
+			"code": "Equal",
 			"letter": "=",
 			"parent": "keyboard",
 			"shift": "+",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Backspace": {
+			"code": "Backspace",
 			"letter": "Backspace",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"Tab": {
+			"code": "Tab",
 			"letter": "Tab",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"KeyQ": {
+			"code": "KeyQ",
 			"letter": "й",
+			"caps": "Й",
 			"parent": "keyboard",
 			"shift": "Й",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyW": {
+			"code": "KeyW",
 			"letter": "ц",
+			"caps": "Ц",
 			"parent": "keyboard",
 			"shift": "Ц",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyE": {
+			"code": "KeyE",
 			"letter": "у",
+			"caps": "У",
 			"parent": "keyboard",
 			"shift": "У",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyR": {
+			"code": "KeyR",
 			"letter": "к",
+			"caps": "К",
 			"parent": "keyboard",
 			"shift": "К",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyT": {
+			"code": "KeyT",
 			"letter": "е",
+			"caps": "Е",
 			"parent": "keyboard",
 			"shift": "Е",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyY": {
+			"code": "KeyY",
 			"letter": "н",
+			"caps": "Н",
 			"parent": "keyboard",
 			"shift": "Н",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyU": {
+			"code": "KeyU",
 			"letter": "г",
+			"caps": "Г",
 			"parent": "keyboard",
 			"shift": "Г",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyI": {
+			"code": "KeyI",
 			"letter": "ш",
+			"caps": "Ш",
 			"parent": "keyboard",
 			"shift": "Ш",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyO": {
+			"code": "KeyO",
 			"letter": "щ",
+			"caps": "Щ",
 			"parent": "keyboard",
 			"shift": "Щ",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyP": {
+			"code": "KeyP",
 			"letter": "з",
+			"caps": "З",
 			"parent": "keyboard",
 			"shift": "З",
-			"isFn": false
+			"isFn": "false"
 		},
 		"BracketLeft": {
+			"code": "BracketLeft",
 			"letter": "х",
+			"caps": "Х",
 			"parent": "keyboard",
 			"shift": "Х",
-			"isFn": false
+			"isFn": "false"
 		},
 		"BracketRight": {
+			"code": "BracketRight",
 			"letter": "ъ",
+			"caps": "Ъ",
 			"parent": "keyboard",
 			"shift": "Ъ",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Backslash": {
+			"code": "Backslash",
 			"letter": "\\",
 			"parent": "keyboard",
 			"shift": "/",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Delete": {
+			"code": "Delete",
 			"letter": "Del",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"CapsLock": {
+			"code": "CapsLock",
 			"letter": "CapsLock",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"KeyA": {
+			"code": "KeyA",
 			"letter": "ф",
+			"caps": "Ф",
 			"parent": "keyboard",
 			"shift": "Ф",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyS": {
+			"code": "KeyS",
 			"letter": "ы",
+			"caps": "Ы",
 			"parent": "keyboard",
 			"shift": "Ы",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyD": {
+			"code": "KeyD",
 			"letter": "в",
+			"caps": "В",
 			"parent": "keyboard",
 			"shift": "В",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyF": {
+			"code": "KeyF",
 			"letter": "а",
+			"caps": "А",
 			"parent": "keyboard",
 			"shift": "А",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyG": {
+			"code": "KeyG",
 			"letter": "п",
+			"caps": "П",
 			"parent": "keyboard",
 			"shift": "П",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyH": {
+			"code": "KeyH",
 			"letter": "р",
+			"caps": "Р",
 			"parent": "keyboard",
 			"shift": "Р",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyJ": {
+			"code": "KeyJ",
 			"letter": "о",
+			"caps": "О",
 			"parent": "keyboard",
 			"shift": "О",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyK": {
+			"code": "KeyK",
 			"letter": "л",
+			"caps": "Л",
 			"parent": "keyboard",
 			"shift": "Л",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyL": {
+			"code": "KeyL",
 			"letter": "д",
+			"caps": "Д",
 			"parent": "keyboard",
 			"shift": "Д",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Semicolon": {
+			"code": "Semicolon",
 			"letter": "ж",
+			"caps": "Ж",
 			"parent": "keyboard",
 			"shift": "Ж",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Quote": {
+			"code": "Quote",
 			"letter": "э",
+			"caps": "Э",
 			"parent": "keyboard",
 			"shift": "Э",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Enter": {
+			"code": "Enter",
 			"letter": "Enter",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"ShiftLeft": {
+			"code": "ShiftLeft",
 			"letter": "🠕 Shift",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"KeyZ": {
+			"code": "KeyZ",
 			"letter": "я",
+			"caps": "Я",
 			"parent": "keyboard",
 			"shift": "Я",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyX": {
+			"code": "KeyX",
 			"letter": "ч",
+			"caps": "Ч",
 			"parent": "keyboard",
 			"shift": "Ч",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyC": {
+			"code": "KeyC",
 			"letter": "с",
+			"caps": "С",
 			"parent": "keyboard",
 			"shift": "С",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyV": {
+			"code": "KeyV",
 			"letter": "м",
+			"caps": "М",
 			"parent": "keyboard",
 			"shift": "М",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyB": {
+			"code": "KeyB",
 			"letter": "и",
+			"caps": "И",
 			"parent": "keyboard",
 			"shift": "И",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyN": {
-			"letter": "Т",
+			"code": "KeyN",
+			"letter": "т",
+			"caps": "Т",
 			"parent": "keyboard",
 			"shift": "Т",
-			"isFn": false
+			"isFn": "false"
 		},
 		"KeyM": {
+			"code": "KeyM",
 			"letter": "ь",
+			"caps": "Ь",
 			"parent": "keyboard",
 			"shift": "Ь",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Comma": {
+			"code": "Comma",
 			"letter": "б",
+			"caps": "Б",
 			"parent": "keyboard",
 			"shift": "Б",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Period": {
+			"code": "Period",
 			"letter": "ю",
+			"caps": "Ю",
 			"parent": "keyboard",
 			"shift": "Ю",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Slash": {
+			"code": "Slash",
 			"letter": ".",
 			"parent": "keyboard",
 			"shift": ",",
-			"isFn": false
+			"isFn": "false"
 		},
 		"Arkeyboardp": {
+			"code": "Arkeyboardp",
 			"letter": "⮝",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"ShiftRight": {
+			"code": "ShiftRight",
 			"letter": "Shift 🠕",
 			"parent": "keyboard",
 			"shift": "~",
-			"isFn": false
+			"isFn": "false"
 		},
 		"ControlLeft": {
+			"code": "ControlLeft",
 			"letter": "Ctrl",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"MetaLeft": {
+			"code": "MetaLeft",
 			"letter": "ღ",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"AltLeft": {
+			"code": "AltLeft",
 			"letter": "Alt",
-			"parent": "keyboard",
-			"shift": "~",
-			"isFn": true
-		},
-		"Space": {
-			"letter": "",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
+		},
+		"Space": {
+			"code": "Space",
+			"letter": " ",
+			"parent": "keyboard",
+			"shift": " ",
+			"isFn": "true"
 		},
 		"AltRight": {
+			"code": "AltRight",
 			"letter": "Alt",
 			"parent": "keyboard",
-			"shift": "~",
-			"isFn": true
+			"shift": "",
+			"isFn": "true"
 		},
 		"Arkeyboardeft": {
+			"code": "Arkeyboardeft",
 			"letter": "⮜",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"Arkeyboardown": {
+			"code": "Arkeyboardown",
 			"letter": "⮟",
 			"parent": "keyboard",
-			"shift": "~",
-			"isFn": true
+			"shift": "",
+			"isFn": "true"
 		},
 		"Arkeyboardight": {
+			"code": "Arkeyboardight",
 			"letter": "⮞",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		},
 		"ControlRight": {
+			"code": "ControlRight",
 			"letter": "Ctrl",
 			"parent": "keyboard",
 			"shift": "",
-			"isFn": true
+			"isFn": "true"
 		}
 	}
 }

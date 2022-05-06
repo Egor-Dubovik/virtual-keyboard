@@ -4,15 +4,15 @@ export const createElement = (name, content, classes, arr, attrData) => {
 	classes.forEach(elClass => element.classList.add(elClass));
 
 	if (attrData) {
-		let { letter, parent = "body", shift = false, isFn = false } = attrData;
+		let { code, letter, parent = "body", shift = false, isFn = false } = attrData;
 
+		element.dataset.code = code;
 		element.dataset.parent = parent;
-		if (element.classList.contains("keyboard__key")) {
-			element.dataset.letter = letter ? letter : null;
-			element.dataset.shift = shift ? shift : letter;
-		}
+		element.dataset.letter = letter;
+		element.dataset.shift = shift ? shift : letter;
 
-		// if (isFn) element.dataset.isFn = isFn;
+
+		if (isFn) element.dataset.isFn = isFn;
 	}
 
 	if (content) element.innerHTML = content;

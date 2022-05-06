@@ -1,5 +1,143 @@
+@charset "UTF-8";
+/*reset*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 $color: rgb(52, 51, 51);
 
 body {
+	font-size: calc(16px + 10 * ((100vw - 320px) / 1280));
+	font-weight: 500;
 	background: $color;
+	color: #ffffff;
+}
+
+.wraper {
+	margin: 0 auto;
+	max-width: 962px;
+	padding: 0 15px;
+}
+.content {
+	padding: 100px 0;
+	&__title {
+		font-family: 'Pacifico', cursive;
+		font-size: calc(16px + 10 * ((100vw - 320px) / 1280));
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1280));
+	}
+	&__textarea {
+		width: 100%;
+		padding-bottom: 20%;
+		border-radius: 6px;
+		resize: vertical;
+		margin-bottom: calc(15px + 10 * ((100vw - 320px) / 1280));
+	}
+	&__keyboard {
+		margin-bottom: calc(15px + 10 * ((100vw - 320px) / 1280));
+	}
+	&__description {
+		margin-bottom: calc(5px + 10 * ((100vw - 320px) / 1280));
+	}
+}
+
+.keyboard {
+	display: grid;
+	grid-template-columns: repeat(58, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	&__key {
+		font-family: 'Oswald', sans-serif;
+		font-size: calc(12px + 10 * ((100vw - 320px) / 1280));
+		padding: 5px;
+		background-color: rgb(161, 114, 54);
+		border: 1px black solid;
+		border-radius: 6px;
+		box-shadow: 1px 1px 0px 0px rgba(#ffffff,0.2);
+    	cursor: pointer;
+	 	grid-column: span 4;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+	}
+}
+
+div[data-letter="Backspace"] {
+	color: red;
+	grid-column: span 6;
+}
+.footer {
+
 }
