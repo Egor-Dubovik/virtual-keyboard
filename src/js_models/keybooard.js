@@ -12,6 +12,12 @@ export class Keyboard {
 			const classes = ["keyboard__key"];
 			const content = keyObj.letter;
 
+			if (key.match(/Arrow/)) classes.push("_move-cursor");
+
+			if (key === "Delete" || key === "Backspace") {
+				classes.push("_del-symbol");
+			}
+
 			createElement("div", content, classes, this.keys, keyObj);
 		}
 		return this.keys;

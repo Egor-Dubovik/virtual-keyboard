@@ -1,6 +1,9 @@
 import { storage } from "./js_models/localStorage";
+import { Keyboard } from "./js_models/Keybooard";
+import { createElement } from "./js_models/creation_funсts/createElement";
 import { createArrOfAllElms } from "./js_models/creation_funсts/createArrAllElements";
 import { displayElms } from "./js_models/displayElms";
+import languges from "./assets/languges";
 import "./style/style.scss";
 
 
@@ -13,12 +16,22 @@ storage.set("language", "en");
 // work with elements -----------------------------------------------------------------
 
 let allElements = [];
-allElements = createArrOfAllElms(allElements, currentLang);
+
+const keybooard = new Keyboard(currentLang);
+const layout = keybooard.createKeys(languges, createElement);
+
+allElements = createArrOfAllElms(allElements, createElement);
+allElements = allElements.concat(layout);
 
 displayElms(allElements);
 
 //-------------------------------------------------------------------------------------
 
+const body = document.body;
+
+body.addEventListener("keydown", (e) => {
+	console.log(e.code);
+})
 
 
 // console.log(allElements);

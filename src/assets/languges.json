@@ -397,8 +397,8 @@
 			"shift": "?",
 			"isFn": "false"
 		},
-		"Arkeyboardp": {
-			"code": "Arkeyboardp",
+		"ArrowUp": {
+			"code": "ArrowUp",
 			"letter": "⮝",
 			"parent": "keyboard",
 			"shift": "",
@@ -446,22 +446,22 @@
 			"shift": "",
 			"isFn": "true"
 		},
-		"Arkeyboardeft": {
-			"code": "Arkeyboardeft",
+		"ArrowLeft": {
+			"code": "ArrowLeft",
 			"letter": "⮜",
 			"parent": "keyboard",
 			"shift": "",
 			"isFn": "true"
 		},
-		"Arkeyboardown": {
-			"code": "Arkeyboardown",
+		"ArrowDown": {
+			"code": "ArrowDown",
 			"letter": "⮟",
 			"parent": "keyboard",
 			"shift": "",
 			"isFn": "true"
 		},
-		"Arkeyboardight": {
-			"code": "Arkeyboardight",
+		"ArrowRight": {
+			"code": "ArrowRight",
 			"letter": "⮞",
 			"parent": "keyboard",
 			"shift": "",
@@ -880,8 +880,8 @@
 			"shift": ",",
 			"isFn": "false"
 		},
-		"Arkeyboardp": {
-			"code": "Arkeyboardp",
+		"ArrowUp": {
+			"code": "ArrowUp",
 			"letter": "⮝",
 			"parent": "keyboard",
 			"shift": "",
@@ -929,22 +929,22 @@
 			"shift": "",
 			"isFn": "true"
 		},
-		"Arkeyboardeft": {
-			"code": "Arkeyboardeft",
+		"ArrowLeft": {
+			"code": "ArrowLeft",
 			"letter": "⮜",
 			"parent": "keyboard",
 			"shift": "",
 			"isFn": "true"
 		},
-		"Arkeyboardown": {
-			"code": "Arkeyboardown",
+		"ArrowDown": {
+			"code": "ArrowDown",
 			"letter": "⮟",
 			"parent": "keyboard",
 			"shift": "",
 			"isFn": "true"
 		},
-		"Arkeyboardight": {
-			"code": "Arkeyboardight",
+		"ArrowRight": {
+			"code": "ArrowRight",
 			"letter": "⮞",
 			"parent": "keyboard",
 			"shift": "",
