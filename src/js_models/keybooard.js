@@ -32,7 +32,6 @@ export class Keyboard {
 
 	getСhangeableKeys() {
 		this.changeKeys = document.querySelectorAll(`div[data-is-fn="false"]`);
-		console.log(this.changeKeys);
 	}
 	checkFnKeys(keyCode) {
 		// switch (currentKey.dataset.isFn)
@@ -72,7 +71,7 @@ export class Keyboard {
 
 	}
 
-	changeShiftKyes() {
+	changeShiftKyes(remove = false) {
 
 		this.changeKeys.forEach(key => {
 
@@ -80,17 +79,32 @@ export class Keyboard {
 				let unicode = key.dataset.letter.charCodeAt(0);
 
 				if (unicode >= this.startUnicode && unicode <= this.lastUnicode) {
-					key.textContent = key.dataset.letter;
+					conditionalChangeKeys(key, remove, true);
 				} else {
-					key.textContent = key.dataset.shift;
+					conditionalChangeKeys(key, remove, false);
 				}
 				return;
 			}
 
-			key.textContent = key.dataset.shift;
+			conditionalChangeKeys(key, remove, false);
 
 		});
 	}
 
+	removeInactiveKey(keyCode) {
+		if (keyCode.match(/Shift/)) this.changeShiftKyes(true);
+	}
+
 }
 
+function conditionalChangeKeys(key, remove, caps) {
+
+	if (remove) {
+		if (caps) key.textContent = key.dataset.shift;
+		else key.textContent = key.dataset.letter;
+	} else {
+		if (caps) key.textContent = key.dataset.letter;
+		else key.textContent = key.dataset.shift;
+	}
+
+}

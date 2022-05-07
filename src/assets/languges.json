@@ -408,8 +408,8 @@
 			"code": "ShiftRight",
 			"letter": "Shift 🠕",
 			"parent": "keyboard",
-			"shift": "~",
-			"isFn": "false"
+			"shift": "",
+			"isFn": "true"
 		},
 		"ControlLeft": {
 			"code": "ControlLeft",
@@ -891,8 +891,8 @@
 			"code": "ShiftRight",
 			"letter": "Shift 🠕",
 			"parent": "keyboard",
-			"shift": "~",
-			"isFn": "false"
+			"shift": "",
+			"isFn": "true"
 		},
 		"ControlLeft": {
 			"code": "ControlLeft",

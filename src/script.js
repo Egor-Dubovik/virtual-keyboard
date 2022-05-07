@@ -31,10 +31,14 @@ keybooard.getСhangeableKeys();
 const body = document.body;
 
 body.addEventListener("keydown", (e) => {
-	console.log(e.key.charCodeAt(0));
+	// console.log(e.key.charCodeAt(0));
 	keybooard.checkFnKeys(e.code);
-})
+});
 
+body.addEventListener("keyup", (e) => {
+	// console.log(e.key.charCodeAt(0));
+	keybooard.removeInactiveKey(e.code);
+});
 
 // console.log(allElements);
 // allElements.forEach(el => console.log(el));
