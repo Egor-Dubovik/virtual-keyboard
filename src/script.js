@@ -9,8 +9,8 @@ import "./style/style.scss";
 
 // localStorage and language -------------------------------------------------------
 
-let currentLang = storage.get("language") ? storage.get("language") : "en";
-storage.set("language", "en");
+let currentLang = storage.get("language") ? storage.get("language") : "ru";
+storage.set("language", "ru");
 
 
 // work with elements -----------------------------------------------------------------
@@ -26,17 +26,20 @@ allElements = allElements.concat(layout);
 displayElms(allElements);
 keybooard.getСhangeableKeys();
 
-//-------------------------------------------------------------------------------------
+// keyboard interaction ------------------------------------------------------------
 
 const body = document.body;
+const textarea = document.querySelector(".content__textarea");
+
 
 body.addEventListener("keydown", (e) => {
-	// console.log(e.key.charCodeAt(0));
+	e.preventDefault();
 	keybooard.checkFnKeys(e.code);
+	keybooard.displaySymbols(e.code, textarea);
 });
 
 body.addEventListener("keyup", (e) => {
-	// console.log(e.key.charCodeAt(0));
+	e.preventDefault();
 	keybooard.removeInactiveKey(e.code);
 });
 

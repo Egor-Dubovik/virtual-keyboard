@@ -920,7 +920,7 @@
 			"letter": " ",
 			"parent": "keyboard",
 			"shift": " ",
-			"isFn": "true"
+			"isFn": "false"
 		},
 		"AltRight": {
 			"code": "AltRight",

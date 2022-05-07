@@ -4,11 +4,13 @@ export class Keyboard {
 		this.startUnicode = language === "en" ? 97 : 1072;
 		this.lastUnicode = language === "en" ? 122 : 1103;
 		this.changeKeys = [];
+		this.fnKeys = ["Tab", "CapsLock", "Shift", "Control", "Alt", "Backspace", "Enter", "Delete", "ArrowLeft", "ArrowDown", "ArrowRight", "ArrowUp"];
 		this.keys = [];
 		this.caps = false;
+		this.shift = false;
 		this.ctrl = false;
 		this.alt = false;
-
+		this.output = "";
 	}
 
 	createKeys(languges, createElement) {
@@ -33,52 +35,58 @@ export class Keyboard {
 	getСhangeableKeys() {
 		this.changeKeys = document.querySelectorAll(`div[data-is-fn="false"]`);
 	}
+
+	displaySymbols(keyCode, textarea) {
+
+		const key = document.querySelector(`div[data-code="${keyCode}"]`);
+		let symbol = key.dataset.letter;
+
+		if (this.shift) symbol = key.dataset.shift;
+
+		if (this.caps && this.checkCapsKey(key)) {
+			symbol = key.dataset.shift;
+		}
+
+		if (this.caps && this.shift) {
+			if (this.checkCapsKey(key)) symbol = key.dataset.letter;
+		}
+
+
+		if (key.dataset.isFn === "false") {
+			this.output += symbol;
+			textarea.value = this.output;
+			textarea.focus();
+		}
+	}
+
 	checkFnKeys(keyCode) {
-		// switch (currentKey.dataset.isFn)
-
-
 		if (keyCode === "CapsLock") this.changeCapsKyes();
 		if (keyCode.match(/Shift/)) this.changeShiftKyes();
-
-
 	}
 
 	changeCapsKyes() {
-
 		if (!this.caps) {
 			this.caps = true
 
 			this.changeKeys.forEach(key => {
-				let unicode = key.dataset.letter.charCodeAt(0);
-
-				if (unicode >= this.startUnicode && unicode <= this.lastUnicode) {
-					key.textContent = key.dataset.shift;
-				} else {
-					key.textContent = key.dataset.letter;
-				}
+				if (this.checkCapsKey(key)) key.textContent = key.dataset.shift;
+				else key.textContent = key.dataset.letter;
 			});
 		} else {
 			this.caps = false;
 
 			this.changeKeys.forEach(key => {
-				let unicode = key.dataset.letter.charCodeAt(0);
-
-				if (unicode >= this.startUnicode && unicode <= this.lastUnicode) {
-					key.textContent = key.dataset.letter;
-				}
+				if (this.checkCapsKey(key)) key.textContent = key.dataset.letter;
 			});
 		}
-
 	}
 
 	changeShiftKyes(remove = false) {
+		this.shift = true;
 
 		this.changeKeys.forEach(key => {
-
 			if (this.caps) {
-				let unicode = key.dataset.letter.charCodeAt(0);
-
-				if (unicode >= this.startUnicode && unicode <= this.lastUnicode) {
+				if (this.checkCapsKey(key)) {
 					conditionalChangeKeys(key, remove, true);
 				} else {
 					conditionalChangeKeys(key, remove, false);
@@ -87,12 +95,25 @@ export class Keyboard {
 			}
 
 			conditionalChangeKeys(key, remove, false);
-
 		});
 	}
 
+	checkCapsKey(key) {
+		let unicode = key.dataset.letter.charCodeAt(0);
+
+		if (unicode >= this.startUnicode && unicode <= this.lastUnicode) {
+			return true;
+		}
+
+		return false;
+	}
+
+
 	removeInactiveKey(keyCode) {
-		if (keyCode.match(/Shift/)) this.changeShiftKyes(true);
+		if (keyCode.match(/Shift/)) {
+			this.changeShiftKyes(true);
+			this.shift = false;
+		}
 	}
 
 }

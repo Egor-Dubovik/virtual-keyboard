@@ -6,10 +6,10 @@ export const createElement = (name, content, classes, arr, attrData) => {
 	if (attrData) {
 		const { code, letter, parent = "body", shift, isFn } = attrData;
 
-		element.dataset.code = code;
 		element.dataset.parent = parent;
-		element.dataset.letter = letter;
-		element.dataset.shift = shift ? shift : letter;
+		if (code) element.dataset.code = code;
+		if (letter) element.dataset.letter = letter;
+		if (shift) element.dataset.shift = shift ? shift : letter;
 		if (isFn) element.dataset.isFn = isFn;
 	}
 
