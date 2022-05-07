@@ -24,13 +24,15 @@ allElements = createArrOfAllElms(allElements, createElement);
 allElements = allElements.concat(layout);
 
 displayElms(allElements);
+keybooard.getСhangeableKeys();
 
 //-------------------------------------------------------------------------------------
 
 const body = document.body;
 
 body.addEventListener("keydown", (e) => {
-	console.log(e.code);
+	console.log(e.key.charCodeAt(0));
+	keybooard.checkFnKeys(e.code);
 })
 
 
