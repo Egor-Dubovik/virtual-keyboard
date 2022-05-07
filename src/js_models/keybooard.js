@@ -59,7 +59,7 @@ export class Keyboard {
 		}
 	}
 
-	checkFnKeys(keyCode) {
+	changeKyes(keyCode) {
 		if (keyCode === "CapsLock") this.changeCapsKyes();
 		if (keyCode.match(/Shift/)) this.changeShiftKyes();
 	}

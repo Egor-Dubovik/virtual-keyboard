@@ -34,7 +34,7 @@ const textarea = document.querySelector(".content__textarea");
 
 body.addEventListener("keydown", (e) => {
 	e.preventDefault();
-	keybooard.checkFnKeys(e.code);
+	keybooard.changeKyes(e.code);
 	keybooard.displaySymbols(e.code, textarea);
 });
 
