@@ -144,11 +144,6 @@ export class Keyboard {
 		console.log(this.cursorPos);
 	}
 
-	changeKyes(keyCode) {
-		if (keyCode === "CapsLock") this.changeCapsKyes();
-		if (keyCode.match(/Shift/)) this.changeShiftKyes();
-	}
-
 	changeCapsKyes() {
 		if (!this.caps) {
 			this.caps = true

@@ -34,12 +34,15 @@ const textarea = document.querySelector(".content__textarea");
 
 body.addEventListener("keydown", (e) => {
 	e.preventDefault();
-	keybooard.changeKyes(e.code);
+
+	if (e.code.match(/Shift/)) keybooard.changeShiftKyes()
 	keybooard.displaySymbols(e.code, textarea);
 });
 
 body.addEventListener("keyup", (e) => {
 	e.preventDefault();
+
+	if (e.code === "CapsLock") keybooard.changeCapsKyes();
 	keybooard.removeInactiveKey(e.code);
 });
 
