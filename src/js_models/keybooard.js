@@ -10,7 +10,8 @@ export class Keyboard {
 		this.shift = false;
 		this.ctrl = false;
 		this.alt = false;
-		this.output = "";
+		this.output = [];
+		this.cursorPos = 0;
 	}
 
 	createKeys(languges, createElement) {
@@ -51,12 +52,96 @@ export class Keyboard {
 			if (this.checkCapsKey(key)) symbol = key.dataset.letter;
 		}
 
+		if (keyCode.match(/Arrow/) || keyCode === "Enter" || keyCode === "Tab") {
+			this.moveСarriage(textarea, keyCode);
+		}
+
+		if (keyCode === "Backspace") this.eraseSymbol(textarea);
+
+		if (keyCode === "Delete") this.delSymbol(textarea);
 
 		if (key.dataset.isFn === "false") {
-			this.output += symbol;
-			textarea.value = this.output;
+			textarea.value = textarea.value.substring(0, this.cursorPos) + symbol + textarea.value.substring(this.cursorPos);
+			this.cursorPos += 1;
+
+			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
 			textarea.focus();
+
+			console.log(this.cursorPos);
 		}
+	}
+
+	moveСarriage(textarea, keyCode) {
+		textarea.focus();
+
+		if (keyCode === "ArrowLeft") {
+			if (textarea.value[this.cursorPos - 1]) this.cursorPos -= 1;
+			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
+			console.log(this.cursorPos);
+		}
+
+		if (keyCode === "ArrowRight") {
+			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
+
+			if (textarea.value[this.cursorPos]) this.cursorPos += 1;
+			console.log(this.cursorPos);
+		}
+
+		if (keyCode === "ArrowUp") {
+			const positionFromLeft = textarea.value.slice(0, this.cursorPos).match(/(\n).*$(?!\1)/g) || [[1]];
+
+			if (textarea.value[this.cursorPos - 1]) {
+				this.cursorPos -= positionFromLeft[0].length;
+			}
+
+			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
+			console.log(this.cursorPos);
+		}
+
+		if (keyCode === "ArrowDown") {
+			const positionFromLeft = textarea.value.slice(this.cursorPos).match(/^.*(\n).*(?!\1)/) || [[1]];
+
+			if (textarea.value[this.cursorPos]) {
+				this.cursorPos += positionFromLeft[0].length;
+				textarea.setSelectionRange(this.cursorPos, this.cursorPos);
+			}
+
+			console.log(positionFromLeft);
+			console.log(this.cursorPos);
+		}
+
+		if (keyCode === "Enter") {
+			textarea.value = textarea.value.substring(0, this.cursorPos) + "\n" + textarea.value.substring(this.cursorPos);
+			this.cursorPos += 1;
+
+			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
+			console.log(this.cursorPos);
+		}
+
+		if (keyCode === "Tab") {
+			textarea.value += "\t";
+			this.cursorPos += 1;
+			console.log(this.cursorPos);
+		}
+	}
+
+	eraseSymbol(textarea) {
+		if (textarea.value.length > 0) {
+			this.cursorPos -= 1;
+			textarea.value = textarea.value.slice(0, this.cursorPos) + textarea.value.slice(this.cursorPos + 1);
+			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
+		}
+
+		console.log(this.cursorPos);
+	}
+
+	delSymbol(textarea) {
+		if (textarea.value[this.cursorPos]) {
+			textarea.value = textarea.value.slice(0, this.cursorPos) + textarea.value.slice(this.cursorPos + 1);
+			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
+		}
+
+		console.log(this.cursorPos);
 	}
 
 	changeKyes(keyCode) {
