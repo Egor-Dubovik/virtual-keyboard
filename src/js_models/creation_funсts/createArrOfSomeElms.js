@@ -1,4 +1,6 @@
-export const createArrOfAllElms = (arr, createElement) => {
+export const createArrOfSomeElms = (createElement) => {
+	let arr = [];
+
 	createElement("div", null, ["wraper"], arr, { parent: "body" });
 	createElement("section", null, ["content"], arr, { parent: "wraper" });
 	createElement("h1", "Virtual Keyboard", ["content__title"], arr, { parent: "section" });

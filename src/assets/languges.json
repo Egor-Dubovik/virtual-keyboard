@@ -95,14 +95,14 @@
 			"code": "Backspace",
 			"letter": "Backspace",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Backspace",
 			"isFn": "true"
 		},
 		"Tab": {
 			"code": "Tab",
 			"letter": "Tab",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Tab",
 			"isFn": "true"
 		},
 		"KeyQ": {
@@ -210,14 +210,14 @@
 			"code": "Delete",
 			"letter": "Del",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Del",
 			"isFn": "true"
 		},
 		"CapsLock": {
 			"code": "CapsLock",
 			"letter": "CapsLock",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "CapsLock",
 			"isFn": "true"
 		},
 		"KeyA": {
@@ -310,14 +310,14 @@
 			"code": "Enter",
 			"letter": "Enter",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Enter",
 			"isFn": "true"
 		},
 		"ShiftLeft": {
 			"code": "ShiftLeft",
 			"letter": "🠕 Shift",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "🠕 Shift",
 			"isFn": "true"
 		},
 		"KeyZ": {
@@ -401,35 +401,35 @@
 			"code": "ArrowUp",
 			"letter": "⮝",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "⮝",
 			"isFn": "true"
 		},
 		"ShiftRight": {
 			"code": "ShiftRight",
 			"letter": "Shift 🠕",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Shift 🠕",
 			"isFn": "true"
 		},
 		"ControlLeft": {
 			"code": "ControlLeft",
 			"letter": "Ctrl",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Ctrl",
 			"isFn": "true"
 		},
 		"MetaLeft": {
 			"code": "MetaLeft",
 			"letter": "ღ",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "ღ",
 			"isFn": "true"
 		},
 		"AltLeft": {
 			"code": "AltLeft",
 			"letter": "Alt",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Alt",
 			"isFn": "true"
 		},
 		"Space": {
@@ -443,35 +443,35 @@
 			"code": "AltRight",
 			"letter": "Alt",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Alt",
 			"isFn": "true"
 		},
 		"ArrowLeft": {
 			"code": "ArrowLeft",
 			"letter": "⮜",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "⮜",
 			"isFn": "true"
 		},
 		"ArrowDown": {
 			"code": "ArrowDown",
 			"letter": "⮟",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "⮟",
 			"isFn": "true"
 		},
 		"ArrowRight": {
 			"code": "ArrowRight",
 			"letter": "⮞",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "⮞",
 			"isFn": "true"
 		},
 		"ControlRight": {
 			"code": "ControlRight",
 			"letter": "Ctrl",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Ctrl",
 			"isFn": "true"
 		}
 	},
@@ -572,14 +572,14 @@
 			"code": "Backspace",
 			"letter": "Backspace",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Backspace",
 			"isFn": "true"
 		},
 		"Tab": {
 			"code": "Tab",
 			"letter": "Tab",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Tab",
 			"isFn": "true"
 		},
 		"KeyQ": {
@@ -689,14 +689,14 @@
 			"code": "Delete",
 			"letter": "Del",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Del",
 			"isFn": "true"
 		},
 		"CapsLock": {
 			"code": "CapsLock",
 			"letter": "CapsLock",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "CapsLock",
 			"isFn": "true"
 		},
 		"KeyA": {
@@ -791,14 +791,14 @@
 			"code": "Enter",
 			"letter": "Enter",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Enter",
 			"isFn": "true"
 		},
 		"ShiftLeft": {
 			"code": "ShiftLeft",
 			"letter": "🠕 Shift",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "🠕 Shift",
 			"isFn": "true"
 		},
 		"KeyZ": {
@@ -884,35 +884,35 @@
 			"code": "ArrowUp",
 			"letter": "⮝",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "⮝",
 			"isFn": "true"
 		},
 		"ShiftRight": {
 			"code": "ShiftRight",
 			"letter": "Shift 🠕",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Shift 🠕",
 			"isFn": "true"
 		},
 		"ControlLeft": {
 			"code": "ControlLeft",
 			"letter": "Ctrl",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Ctrl",
 			"isFn": "true"
 		},
 		"MetaLeft": {
 			"code": "MetaLeft",
 			"letter": "ღ",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "ღ",
 			"isFn": "true"
 		},
 		"AltLeft": {
 			"code": "AltLeft",
 			"letter": "Alt",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Alt",
 			"isFn": "true"
 		},
 		"Space": {
@@ -926,35 +926,35 @@
 			"code": "AltRight",
 			"letter": "Alt",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Alt",
 			"isFn": "true"
 		},
 		"ArrowLeft": {
 			"code": "ArrowLeft",
 			"letter": "⮜",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "⮜",
 			"isFn": "true"
 		},
 		"ArrowDown": {
 			"code": "ArrowDown",
 			"letter": "⮟",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "⮟",
 			"isFn": "true"
 		},
 		"ArrowRight": {
 			"code": "ArrowRight",
 			"letter": "⮞",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "⮞",
 			"isFn": "true"
 		},
 		"ControlRight": {
 			"code": "ControlRight",
 			"letter": "Ctrl",
 			"parent": "keyboard",
-			"shift": "",
+			"shift": "Ctrl",
 			"isFn": "true"
 		}
 	}

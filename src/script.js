@@ -1,29 +1,27 @@
-import { storage } from "./js_models/localStorage";
 import { Keyboard } from "./js_models/Keybooard";
 import { createElement } from "./js_models/creation_funсts/createElement";
-import { createArrOfAllElms } from "./js_models/creation_funсts/createArrAllElements";
+import { createArrOfSomeElms } from "./js_models/creation_funсts/createArrOfSomeElms";
 import { displayElms } from "./js_models/displayElms";
-import languges from "./assets/languges";
 import "./style/style.scss";
 
 
 // localStorage and language -------------------------------------------------------
 
-let currentLang = storage.get("language") ? storage.get("language") : "ru";
-storage.set("language", "ru");
+
+
 
 
 // work with elements -----------------------------------------------------------------
 
-let allElements = [];
+const keybooard = new Keyboard();
+keybooard.setLang();
+let layout = keybooard.createKeys(createElement);
 
-const keybooard = new Keyboard(currentLang);
-const layout = keybooard.createKeys(languges, createElement);
+let someElements = createArrOfSomeElms(createElement);
 
-allElements = createArrOfAllElms(allElements, createElement);
-allElements = allElements.concat(layout);
+displayElms(someElements);
+displayElms(layout);
 
-displayElms(allElements);
 keybooard.getСhangeableKeys();
 
 // keyboard interaction ------------------------------------------------------------
@@ -37,12 +35,27 @@ body.addEventListener("keydown", (e) => {
 
 	if (e.code.match(/Shift/)) keybooard.changeShiftKyes()
 	keybooard.displaySymbols(e.code, textarea);
+
+	if (keybooard.alt && keybooard.ctrl) {
+		keybooard.changeLang();
+		const newLayout = keybooard.createKeys(createElement);
+
+		document.querySelector(".keyboard").innerHTML = "";
+		displayElms(newLayout);
+		keybooard.getСhangeableKeys();
+	}
+
+
 });
 
 body.addEventListener("keyup", (e) => {
 	e.preventDefault();
 
-	if (e.code === "CapsLock") keybooard.changeCapsKyes();
+	if (e.code === "Alt") keybooard.alt = false;
+	if (e.code === "CapsLock") {
+		keybooard.changeCapsKyes();
+		console.log("yes");
+	}
 	keybooard.removeInactiveKey(e.code);
 });
 

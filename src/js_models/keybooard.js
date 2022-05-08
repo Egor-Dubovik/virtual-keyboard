@@ -1,8 +1,12 @@
+import { storage } from "../js_models/localStorage";
+import listLanguges from "../assets/languges";
+
 export class Keyboard {
-	constructor(language) {
-		this.lang = language;
-		this.startUnicode = language === "en" ? 97 : 1072;
-		this.lastUnicode = language === "en" ? 122 : 1103;
+	constructor() {
+		this.languages = ["en", "ru"];
+		this.currentLang = "en";
+		this.startUnicode = 97;
+		this.lastUnicode = 122;
 		this.changeKeys = [];
 		this.fnKeys = ["Tab", "CapsLock", "Shift", "Control", "Alt", "Backspace", "Enter", "Delete", "ArrowLeft", "ArrowDown", "ArrowRight", "ArrowUp"];
 		this.keys = [];
@@ -10,22 +14,44 @@ export class Keyboard {
 		this.shift = false;
 		this.ctrl = false;
 		this.alt = false;
-		this.output = [];
 		this.cursorPos = 0;
 	}
 
-	createKeys(languges, createElement) {
-		let layoutLang = languges[this.lang];
+	changeUnicodeRange() {
+		this.startUnicode = this.currentLang === "en" ? 97 : 1072;
+		this.lastUnicode = this.currentLang === "en" ? 122 : 1103;
+	}
+
+	setLang() {
+		if (storage.get("language")) storage.set("language", this.languages[0]);
+		this.currentLang = storage.get("language");
+	}
+
+	changeLang() {
+		const arrLang = this.languages;
+
+		for (let i = 0; i < arrLang.length; i++) {
+			if (arrLang[i] === this.currentLang) {
+				(i !== arrLang.length - 1) ? i++ : i = 0;
+				this.currentLang = this.languages[i]
+				storage.set("language", this.languages[i]);
+			}
+		}
+
+		this.changeUnicodeRange();
+	}
+
+	createKeys(createElement) {
+		const layoutLang = listLanguges[this.currentLang];
+		this.keys = [];
 
 		for (let key in layoutLang) {
 			const keyObj = layoutLang[key];
 			const classes = ["keyboard__key"];
-			const content = keyObj.letter;
+			let content = keyObj.letter;
 
-			if (key.match(/Arrow/)) classes.push("_move-cursor");
-
-			if (key === "Delete" || key === "Backspace") {
-				classes.push("_del-symbol");
+			if (this.caps && this.checkCapsKey(keyObj.letter)) {
+				content = keyObj.shift;
 			}
 
 			createElement("div", content, classes, this.keys, keyObj);
@@ -59,6 +85,9 @@ export class Keyboard {
 		if (keyCode === "Backspace") this.eraseSymbol(textarea);
 
 		if (keyCode === "Delete") this.delSymbol(textarea);
+
+		if (keyCode.match(/Alt/)) this.alt = true;
+		if (keyCode.match(/Control/)) this.ctrl = true;
 
 		if (key.dataset.isFn === "false") {
 			textarea.value = textarea.value.substring(0, this.cursorPos) + symbol + textarea.value.substring(this.cursorPos);
@@ -126,7 +155,7 @@ export class Keyboard {
 	}
 
 	eraseSymbol(textarea) {
-		if (textarea.value.length > 0) {
+		if (textarea.value[this.cursorPos - 1]) {
 			this.cursorPos -= 1;
 			textarea.value = textarea.value.slice(0, this.cursorPos) + textarea.value.slice(this.cursorPos + 1);
 			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
@@ -179,21 +208,29 @@ export class Keyboard {
 	}
 
 	checkCapsKey(key) {
-		let unicode = key.dataset.letter.charCodeAt(0);
+		let unicode = "";
+
+		if (typeof key === "string") {
+			unicode = key.charCodeAt(0);
+		} else {
+			unicode = key.dataset.letter.charCodeAt(0)
+		}
 
 		if (unicode >= this.startUnicode && unicode <= this.lastUnicode) {
 			return true;
 		}
-
+		console.log();
 		return false;
 	}
-
 
 	removeInactiveKey(keyCode) {
 		if (keyCode.match(/Shift/)) {
 			this.changeShiftKyes(true);
 			this.shift = false;
 		}
+
+		if (keyCode.match(/Alt/)) this.alt = false;
+		if (keyCode.match(/Control/)) this.ctrl = false;
 	}
 
 }
