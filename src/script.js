@@ -18,7 +18,7 @@ displayElms(someElements);
 displayElms(layout);
 keybooard.getСhangeableKeys();
 
-//  ------------------------------------------------------------
+// keyboard action ------------------------------------------------------------
 const body = document.body;
 const textarea = document.querySelector(".content__textarea");
 const inputColor = document.querySelector(".content__input-color");
