@@ -1,5 +1,6 @@
 import { storage } from "../js_models/localStorage";
 import listLanguges from "../assets/languges";
+import lightenDarkenColor from "./lightenDarkenColor";
 
 export class Keyboard {
 	constructor() {
@@ -15,6 +16,7 @@ export class Keyboard {
 		this.ctrl = false;
 		this.alt = false;
 		this.cursorPos = 0;
+		this.colorWasChanged = false;
 	}
 
 	changeUnicodeRange() {
@@ -218,6 +220,21 @@ export class Keyboard {
 		if (keyCode.match(/Control/)) this.ctrl = false;
 	}
 
+	manageColor(color) {
+		this.colorWasChanged = true;
+		const allKeys = document.querySelectorAll(".keyboard__key");
+
+		allKeys.forEach(key => {
+			key.style.backgroundColor = color;
+			key.style.borderColor = color;
+
+			if (key.dataset.isFn === "true") {
+				key.style.backgroundColor = lightenDarkenColor(color, -30);
+				key.style.borderColor = lightenDarkenColor(color, -30);
+			}
+
+		});
+	}
 }
 
 function conditionalChangeKeys(key, remove, caps) {

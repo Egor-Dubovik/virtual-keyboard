@@ -21,18 +21,17 @@ keybooard.getСhangeableKeys();
 //  ------------------------------------------------------------
 const body = document.body;
 const textarea = document.querySelector(".content__textarea");
+const inputColor = document.querySelector(".content__input-color");
 
-body.addEventListener("keydown", listenKeyDown);
-body.addEventListener("keyup", listenKeyUp);
-body.addEventListener("pointerdown", listenKeyDown);
-body.addEventListener("pointerup", listenKeyUp);
+body.addEventListener("keydown", listenDownAction);
+body.addEventListener("keyup", listenUpAction);
+body.addEventListener("pointerdown", listenDownAction);
+body.addEventListener("pointerup", listenUpAction);
+inputColor.addEventListener("input", () => {
+	keybooard.manageColor(inputColor.value);
+});
 
-function gg(e) {
-	e.preventDefault();
-	console.log(e.target.dataset.code);
-}
-
-function listenKeyDown(e) {
+function listenDownAction(e) {
 	let keyCode = e.code ? keyCode = e.code : keyCode = e.target.dataset.code;
 	e.preventDefault();
 
@@ -43,7 +42,7 @@ function listenKeyDown(e) {
 	}
 }
 
-function listenKeyUp(e) {
+function listenUpAction(e) {
 	let keyCode = e.code ? keyCode = e.code : keyCode = e.target.dataset.code;
 	e.preventDefault();
 
@@ -58,6 +57,7 @@ function listenKeyUp(e) {
 			document.querySelector(".keyboard").innerHTML = "";
 			displayElms(newLayout);
 			keybooard.getСhangeableKeys();
+			if (keybooard.colorWasChanged) keybooard.manageColor(inputColor.value);
 		}
 
 		keybooard.removeInactiveKey(keyCode);
@@ -71,3 +71,4 @@ function switchAnimationKey(keyCode, add) {
 		add ? key.classList.add("active") : key.classList.remove("active");
 	}
 }
+
