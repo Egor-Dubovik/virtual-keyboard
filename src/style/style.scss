@@ -125,6 +125,7 @@ body {
 		padding: calc(5px + 6 * ((100vw - 320px) / 1280));
 		background-color: $bgKeys;
 		color: $colorKeys;
+		border: 2px solid $bgKeys;
 		border-radius: 10px; 
 		box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
     	cursor: pointer;
@@ -146,11 +147,12 @@ body {
 	animation: vibrate  0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
 	background-color: #0e0d1000;
 	box-shadow: 0px 5px 0px rgba(0, 0, 0, 0);
-	border: 2px solid $colorKeys;
+	border-color: $colorKeys;
 }
 
 div[data-is-fn="true"] {
 	background-color: #0e0d10;
+	border-color: #0e0d10;
 }
 
 div[data-code="Backspace"],

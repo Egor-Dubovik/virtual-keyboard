@@ -64,39 +64,39 @@ export class Keyboard {
 	}
 
 	displaySymbols(keyCode, textarea) {
-
 		const key = document.querySelector(`div[data-code="${keyCode}"]`);
-		let symbol = key.dataset.letter;
 
-		if (this.shift) symbol = key.dataset.shift;
+		if (key) {
+			let symbol = key.dataset.letter;
 
-		if (this.caps && this.checkCapsKey(key)) {
-			symbol = key.dataset.shift;
-		}
+			if (this.shift) symbol = key.dataset.shift;
 
-		if (this.caps && this.shift) {
-			if (this.checkCapsKey(key)) symbol = key.dataset.letter;
-		}
+			if (this.caps && this.checkCapsKey(key)) {
+				symbol = key.dataset.shift;
+			}
 
-		if (keyCode.match(/Arrow/) || keyCode === "Enter" || keyCode === "Tab") {
-			this.moveСarriage(textarea, keyCode);
-		}
+			if (this.caps && this.shift) {
+				if (this.checkCapsKey(key)) symbol = key.dataset.letter;
+			}
 
-		if (keyCode === "Backspace") this.eraseSymbol(textarea);
+			if (keyCode.match(/Arrow/) || keyCode === "Enter" || keyCode === "Tab") {
+				this.moveСarriage(textarea, keyCode);
+			}
 
-		if (keyCode === "Delete") this.delSymbol(textarea);
+			if (keyCode === "Backspace") this.eraseSymbol(textarea);
 
-		if (keyCode.match(/Alt/)) this.alt = true;
-		if (keyCode.match(/Control/)) this.ctrl = true;
+			if (keyCode === "Delete") this.delSymbol(textarea);
 
-		if (key.dataset.isFn === "false") {
-			textarea.value = textarea.value.substring(0, this.cursorPos) + symbol + textarea.value.substring(this.cursorPos);
-			this.cursorPos += 1;
+			if (keyCode.match(/Alt/)) this.alt = true;
+			if (keyCode.match(/Control/)) this.ctrl = true;
 
-			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
-			textarea.focus();
+			if (key.dataset.isFn === "false") {
+				textarea.value = textarea.value.substring(0, this.cursorPos) + symbol + textarea.value.substring(this.cursorPos);
+				this.cursorPos += 1;
 
-			console.log(this.cursorPos);
+				textarea.setSelectionRange(this.cursorPos, this.cursorPos);
+				textarea.focus();
+			}
 		}
 	}
 
@@ -106,14 +106,11 @@ export class Keyboard {
 		if (keyCode === "ArrowLeft") {
 			if (textarea.value[this.cursorPos - 1]) this.cursorPos -= 1;
 			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
-			console.log(this.cursorPos);
 		}
 
 		if (keyCode === "ArrowRight") {
 			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
-
 			if (textarea.value[this.cursorPos]) this.cursorPos += 1;
-			console.log(this.cursorPos);
 		}
 
 		if (keyCode === "ArrowUp") {
@@ -124,7 +121,6 @@ export class Keyboard {
 			}
 
 			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
-			console.log(this.cursorPos);
 		}
 
 		if (keyCode === "ArrowDown") {
@@ -134,9 +130,6 @@ export class Keyboard {
 				this.cursorPos += positionFromLeft[0].length;
 				textarea.setSelectionRange(this.cursorPos, this.cursorPos);
 			}
-
-			console.log(positionFromLeft);
-			console.log(this.cursorPos);
 		}
 
 		if (keyCode === "Enter") {
@@ -144,13 +137,11 @@ export class Keyboard {
 			this.cursorPos += 1;
 
 			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
-			console.log(this.cursorPos);
 		}
 
 		if (keyCode === "Tab") {
 			textarea.value += "\t";
 			this.cursorPos += 1;
-			console.log(this.cursorPos);
 		}
 	}
 
@@ -160,8 +151,6 @@ export class Keyboard {
 			textarea.value = textarea.value.slice(0, this.cursorPos) + textarea.value.slice(this.cursorPos + 1);
 			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
 		}
-
-		console.log(this.cursorPos);
 	}
 
 	delSymbol(textarea) {
@@ -169,8 +158,6 @@ export class Keyboard {
 			textarea.value = textarea.value.slice(0, this.cursorPos) + textarea.value.slice(this.cursorPos + 1);
 			textarea.setSelectionRange(this.cursorPos, this.cursorPos);
 		}
-
-		console.log(this.cursorPos);
 	}
 
 	changeCapsKyes() {

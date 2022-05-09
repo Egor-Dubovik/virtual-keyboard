@@ -24,29 +24,51 @@ const textarea = document.querySelector(".content__textarea");
 
 body.addEventListener("keydown", listenKeyDown);
 body.addEventListener("keyup", listenKeyUp);
+body.addEventListener("pointerdown", listenKeyDown);
+body.addEventListener("pointerup", listenKeyUp);
 
+function gg(e) {
+	e.preventDefault();
+	console.log(e.target.dataset.code);
+}
 
 function listenKeyDown(e) {
+	let keyCode = e.code ? keyCode = e.code : keyCode = e.target.dataset.code;
 	e.preventDefault();
 
-	if (e.code.match(/Shift/)) keybooard.changeShiftKyes()
-	keybooard.displaySymbols(e.code, textarea);
+	if (!!keyCode) {
+		if (keyCode.match(/Shift/)) keybooard.changeShiftKyes()
+		keybooard.displaySymbols(keyCode, textarea);
 
-	if (keybooard.alt && keybooard.ctrl) {
-		keybooard.changeLang();
-		const newLayout = keybooard.createKeys(createElement);
+		if (keybooard.alt && keybooard.ctrl) {
+			keybooard.changeLang();
+			const newLayout = keybooard.createKeys(createElement);
 
-		document.querySelector(".keyboard").innerHTML = "";
-		displayElms(newLayout);
-		keybooard.getСhangeableKeys();
+			document.querySelector(".keyboard").innerHTML = "";
+			displayElms(newLayout);
+			keybooard.getСhangeableKeys();
+		}
+
+		switchAnimationKey(keyCode, true);
 	}
 }
 
 function listenKeyUp(e) {
+	let keyCode = e.code ? keyCode = e.code : keyCode = e.target.dataset.code;
 	e.preventDefault();
 
-	if (e.code === "Alt") keybooard.alt = false;
-	if (e.code === "CapsLock") keybooard.changeCapsKyes();
+	if (!!keyCode) {
+		if (keyCode === "Alt") keybooard.alt = false;
+		if (keyCode === "CapsLock") keybooard.changeCapsKyes();
 
-	keybooard.removeInactiveKey(e.code);
+		keybooard.removeInactiveKey(keyCode);
+		switchAnimationKey(keyCode, false);
+	}
+}
+
+function switchAnimationKey(keyCode, add) {
+	const key = document.querySelector(`div[data-code="${keyCode}"]`);
+	if (key) {
+		add ? key.classList.add("active") : key.classList.remove("active");
+	}
 }
