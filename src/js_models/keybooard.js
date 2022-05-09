@@ -25,7 +25,7 @@ export class Keyboard {
 	}
 
 	setLang() {
-		if (storage.get("language")) storage.set("language", this.languages[0]);
+		if (!storage.get("language")) storage.set("language", this.languages[0]);
 		this.currentLang = storage.get("language");
 	}
 
