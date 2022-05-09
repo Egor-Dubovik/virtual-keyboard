@@ -5,32 +5,28 @@ import { displayElms } from "./js_models/displayElms";
 import "./style/style.scss";
 
 
-// localStorage and language -------------------------------------------------------
 
 
-
-
-
-// work with elements -----------------------------------------------------------------
-
+// first render  -----------------------------------------------------------------
 const keybooard = new Keyboard();
 keybooard.setLang();
-let layout = keybooard.createKeys(createElement);
 
+let layout = keybooard.createKeys(createElement);
 let someElements = createArrOfSomeElms(createElement);
 
 displayElms(someElements);
 displayElms(layout);
-
 keybooard.getСhangeableKeys();
 
-// keyboard interaction ------------------------------------------------------------
-
+//  ------------------------------------------------------------
 const body = document.body;
 const textarea = document.querySelector(".content__textarea");
 
+body.addEventListener("keydown", listenKeyDown);
+body.addEventListener("keyup", listenKeyUp);
 
-body.addEventListener("keydown", (e) => {
+
+function listenKeyDown(e) {
 	e.preventDefault();
 
 	if (e.code.match(/Shift/)) keybooard.changeShiftKyes()
@@ -44,26 +40,13 @@ body.addEventListener("keydown", (e) => {
 		displayElms(newLayout);
 		keybooard.getСhangeableKeys();
 	}
+}
 
-
-});
-
-body.addEventListener("keyup", (e) => {
+function listenKeyUp(e) {
 	e.preventDefault();
 
 	if (e.code === "Alt") keybooard.alt = false;
-	if (e.code === "CapsLock") {
-		keybooard.changeCapsKyes();
-		console.log("yes");
-	}
+	if (e.code === "CapsLock") keybooard.changeCapsKyes();
+
 	keybooard.removeInactiveKey(e.code);
-});
-
-// console.log(allElements);
-// allElements.forEach(el => console.log(el));
-
-
-// body.addEventListener("keyup", (e) => {
-// 	console.log(e.code, e.key);
-// })
-
+}
