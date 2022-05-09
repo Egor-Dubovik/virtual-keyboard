@@ -8,7 +8,8 @@ export const createArrOfSomeElms = (createElement) => {
 	createElement("div", null, ["content__keyboard", "keyboard"], arr, { parent: "content" });
 	createElement("p", "The keyboard was created in the Windows OS", ["content__description"], arr, { parent: "content" });
 	createElement("p", "To switch the language combination: shift + alt", ["content__switch-lang"], arr, { parent: "content" });
-	createElement("footer", null, ["footer"], arr, { parent: "wraper" });
+	createElement("p", "Manage color of keyboard:", ["content__manage-color"], arr, { parent: "content" });
+	createElement("input", null, ["content__input-color"], arr, { parent: "content" }, { type: "color" });
 
 	return arr;
 }

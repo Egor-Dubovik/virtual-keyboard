@@ -71,9 +71,7 @@ export class Keyboard {
 
 			if (this.shift) symbol = key.dataset.shift;
 
-			if (this.caps && this.checkCapsKey(key)) {
-				symbol = key.dataset.shift;
-			}
+			if (this.caps && this.checkCapsKey(key)) symbol = key.dataset.shift;
 
 			if (this.caps && this.shift) {
 				if (this.checkCapsKey(key)) symbol = key.dataset.letter;

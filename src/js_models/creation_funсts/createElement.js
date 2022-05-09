@@ -1,5 +1,5 @@
-export const createElement = (name, content, classes, arr, attrData) => {
-	const element = document.createElement(name);
+export const createElement = (tag, content, classes, arr, attrData, attributes) => {
+	const element = document.createElement(tag);
 
 	classes.forEach(elClass => element.classList.add(elClass));
 
@@ -11,6 +11,11 @@ export const createElement = (name, content, classes, arr, attrData) => {
 		if (letter) element.dataset.letter = letter;
 		if (shift) element.dataset.shift = shift ? shift : letter;
 		if (isFn) element.dataset.isFn = isFn;
+	}
+
+	if (attributes) {
+		const { type } = attributes;
+		element.type = type;
 	}
 
 	if (content) element.innerHTML = content;

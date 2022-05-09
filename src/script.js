@@ -39,16 +39,6 @@ function listenKeyDown(e) {
 	if (!!keyCode) {
 		if (keyCode.match(/Shift/)) keybooard.changeShiftKyes()
 		keybooard.displaySymbols(keyCode, textarea);
-
-		if (keybooard.alt && keybooard.ctrl) {
-			keybooard.changeLang();
-			const newLayout = keybooard.createKeys(createElement);
-
-			document.querySelector(".keyboard").innerHTML = "";
-			displayElms(newLayout);
-			keybooard.getСhangeableKeys();
-		}
-
 		switchAnimationKey(keyCode, true);
 	}
 }
@@ -60,6 +50,15 @@ function listenKeyUp(e) {
 	if (!!keyCode) {
 		if (keyCode === "Alt") keybooard.alt = false;
 		if (keyCode === "CapsLock") keybooard.changeCapsKyes();
+
+		if (keybooard.alt && keybooard.ctrl) {
+			keybooard.changeLang();
+			const newLayout = keybooard.createKeys(createElement);
+
+			document.querySelector(".keyboard").innerHTML = "";
+			displayElms(newLayout);
+			keybooard.getСhangeableKeys();
+		}
 
 		keybooard.removeInactiveKey(keyCode);
 		switchAnimationKey(keyCode, false);
