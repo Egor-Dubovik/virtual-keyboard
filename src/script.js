@@ -8,6 +8,7 @@ import "./style/style.scss";
 
 
 // first render  -----------------------------------------------------------------
+
 const keybooard = new Keyboard();
 keybooard.setLang();
 
@@ -18,7 +19,11 @@ displayElms(someElements);
 displayElms(layout);
 keybooard.getСhangeableKeys();
 
+keybooard.checkColorKeys("colorKeys", keybooard.colorKeys);
+keybooard.manageColor(keybooard.colorKeys);
+
 // keyboard action ------------------------------------------------------------
+
 const body = document.body;
 const textarea = document.querySelector(".content__textarea");
 const inputColor = document.querySelector(".content__input-color");
@@ -29,6 +34,7 @@ body.addEventListener("pointerdown", listenDownAction);
 body.addEventListener("pointerup", listenUpAction);
 inputColor.addEventListener("input", () => {
 	keybooard.manageColor(inputColor.value);
+	keybooard.setColorKeys("colorKeys", inputColor.value);
 });
 
 function listenDownAction(e) {
@@ -57,7 +63,7 @@ function listenUpAction(e) {
 			document.querySelector(".keyboard").innerHTML = "";
 			displayElms(newLayout);
 			keybooard.getСhangeableKeys();
-			if (keybooard.colorWasChanged) keybooard.manageColor(inputColor.value);
+			keybooard.manageColor(keybooard.colorKeys);
 		}
 
 		keybooard.removeInactiveKey(keyCode);

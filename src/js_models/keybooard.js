@@ -16,7 +16,7 @@ export class Keyboard {
 		this.ctrl = false;
 		this.alt = false;
 		this.cursorPos = 0;
-		this.colorWasChanged = false;
+		this.colorKeys = "#353535";
 	}
 
 	changeUnicodeRange() {
@@ -27,6 +27,15 @@ export class Keyboard {
 	setLang() {
 		if (!storage.get("language")) storage.set("language", this.languages[0]);
 		this.currentLang = storage.get("language");
+	}
+
+	checkColorKeys(item, value) {
+		if (!storage.get(`${item}`)) storage.set(`${item}`, value);
+		this.colorKeys = storage.get(item);
+	}
+	setColorKeys(item, value) {
+		storage.set(`${item}`, value);
+		this.colorKeys = value;
 	}
 
 	changeLang() {
@@ -221,8 +230,8 @@ export class Keyboard {
 	}
 
 	manageColor(color) {
-		this.colorWasChanged = true;
 		const allKeys = document.querySelectorAll(".keyboard__key");
+		this.colorKeys = color;
 
 		allKeys.forEach(key => {
 			key.style.backgroundColor = color;
