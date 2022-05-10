@@ -18,6 +18,8 @@ let someElements = createArrOfSomeElms(createElement);
 displayElms(someElements);
 displayElms(layout);
 keybooard.getСhangeableKeys();
+keybooard.changeUnicodeRange();
+
 
 keybooard.checkColorKeys("colorKeys", keybooard.colorKeys);
 keybooard.manageColor(keybooard.colorKeys);
@@ -41,7 +43,7 @@ function listenDownAction(e) {
 	let keyCode = e.code ? keyCode = e.code : keyCode = e.target.dataset.code;
 	e.preventDefault();
 
-	if (!!keyCode) {
+	if (keyCode) {
 		if (keyCode.match(/Shift/)) keybooard.changeShiftKyes()
 		keybooard.displaySymbols(keyCode, textarea);
 		switchAnimationKey(keyCode, true);
@@ -52,9 +54,10 @@ function listenUpAction(e) {
 	let keyCode = e.code ? keyCode = e.code : keyCode = e.target.dataset.code;
 	e.preventDefault();
 
-	if (!!keyCode) {
+	if (keyCode) {
 		if (keyCode === "Alt") keybooard.alt = false;
 		if (keyCode === "CapsLock") keybooard.changeCapsKyes();
+
 
 		if (keybooard.alt && keybooard.ctrl) {
 			keybooard.changeLang();

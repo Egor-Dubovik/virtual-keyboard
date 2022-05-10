@@ -215,7 +215,7 @@ export class Keyboard {
 		if (unicode >= this.startUnicode && unicode <= this.lastUnicode) {
 			return true;
 		}
-		console.log();
+
 		return false;
 	}
 
